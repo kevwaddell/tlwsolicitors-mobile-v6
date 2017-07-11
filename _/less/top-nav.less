@@ -1,0 +1,184 @@
+#top-nav {
+overflow: hidden;
+.rel;
+.bg-col(@wht);	
+
+	&.nav-closed {
+	height: 0px;
+	}
+
+	&.nav-open {
+	height: 85vh;
+	.border-bot(@grayDk; 0.1);
+	}
+
+	.nav-wrapper {
+	.rel;
+	.clearfix;
+	.pad-top(1);
+	.pad-bot(5);
+	height: 100%;
+	overflow-y: scroll;
+	}
+	
+	button#close-nav {
+	.pad-all(0);	
+	.abs;
+	left: 50%;
+	.bottom(-0.1);
+	.mag-left(-2);
+	.h(4);
+	.w(4);
+	.border-radius(100%, 0, 0, 100%);
+	.bg-col(@wht);
+	.txt-col-grayDk;
+	.border(@grayDk; 0.1);
+	outline: none;
+	.transition(0.3s, ease-in-out);
+	z-index: 2;
+		i {
+		.block;
+		.mag-top(-1);	
+		}
+		&:active {
+		.bottom(-0.5);
+		}
+	}
+	
+	.top-nav-icon-links {
+	.mag-bot(0.5);
+		
+		a {
+		.block;
+		.txt-col-grayDk;
+		.no-text-dec;
+		.w(4);
+		.h(4);
+		.border(@grayDk; 0.1);
+		.rounded(100%);
+		
+			i {
+			.block;
+			.line-h(3.8);
+			.font-size(1.6);
+			text-align: center;
+			}
+			
+			span.fontawesome-text {
+			.sr-only;
+			}	
+			
+			&:active {
+			.bg-col-grayDk;
+				i {
+				.txt-col-wht;	
+				}
+			}
+		}
+	}
+	
+	#menu-hidden-navigation {
+	//width: 50%;
+	.rel;
+		a {
+		.block;	
+		.rel;
+		text-align: center;
+		.txt-col-grayDk;
+		.font-slab-serif;
+		.no-text-dec;
+		.caps;
+		.font-size(1.4);
+		.line-h(1.4);
+		.pad-all(1);
+		.border(@grayDk; 0.1);
+		.transition;
+			&:active {
+			.txt-col-red;
+			}
+		}
+		
+		li {
+		.mag-top(0.5);	
+		.rel;
+			&.with-sub-nav > a:after {
+			content: "\f055";	
+			font-family: FontAwesome;	
+			.abs;
+			.right(1);
+			.top(0);
+			.txt-col-gray-lt;
+			.font-size(1.4);
+			.line-h(3.4);	
+			}
+		}
+		
+		ul.sub-menu {
+		.bg-col(@wht);
+		.list-unstyled;
+		.mag-left(2);
+		.mag-right(2);
+		//.pad-top(1);
+			a {
+			text-transform: none;
+			.font-size(1.2);
+			.line-h(1.2);	
+			.pad-all(0.7);
+			}
+			
+			li {
+				
+				&.with-sub-nav > a:after {
+				content: "\f055";	
+				font-family: FontAwesome;	
+				.txt-col-gray-lt;
+				.font-size(1.4);
+				.line-h(2.6);	
+				.right(0.5);
+				}	
+			}
+			
+			ul.sub-menu {
+				li {
+				.block;	
+				.mag-top(0);
+				}
+				a {
+				.font-size(1);	
+				.pad-all(0.5);
+				border-top: none;
+				}
+			}
+		}
+		
+				
+		li.sub-open { 
+		//.pad-bot(1);
+			
+			& > a {
+			.txt-col-red;
+				&:after {
+				content: "\f056";	
+				}
+			}
+
+			ul.sub-menu {
+			height: auto;
+			.animated;
+			.fadeInRight;
+				
+				li.sub-open ul.sub-menu {
+				.animated;
+				.fadeInRight;	
+				}	
+			}	
+		}
+		
+		li.sub-closed {
+			ul.sub-menu {
+			.h(0);
+			.over-hide;	
+			}	
+		}
+	}		
+}
