@@ -11,6 +11,8 @@ Template Name: Toolkits archive page
 	$sections_active = get_field('sections_active');
 ?>	
 
+	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
+
 	<!-- TOOLKITS GRID -->
 	<?php get_template_part( 'parts/sections/section', 'toolkits' ); ?>
 	

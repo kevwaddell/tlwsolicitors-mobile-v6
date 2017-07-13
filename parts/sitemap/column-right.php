@@ -59,79 +59,76 @@ $subjects = get_tags($subjects_args);
 //echo '<pre>';print_r($topics);echo '</pre>';
 
  ?>
-<div class="col-xs-6">
 
-	<a href="<?php echo get_permalink($company_page_id); ?>" class="header-link"><?php echo get_the_title($company_page_id); ?></a>
-	
-	<?php if ($company_pages) { ?>
-		<div class="list-block">
-	
-			<ul class="list-unstyled">
-			
-				<?php foreach ($company_pages as $company_page) { ?>
-				<li><a href="<?php echo get_permalink($company_page->ID); ?>"><?php echo get_the_title($company_page->ID); ?></a></li>
-				<?php } ?>
-			
-			</ul>
-			
-		</div>
-	<?php } ?>
-						
-	<h3>General</h3>
-	
-	<?php if ($rescources_pages) { ?>
-		<div class="list-block">
-	
-			<ul class="list-unstyled">
-			
-				<?php foreach ($rescources_pages as $rescources_page) { ?>
-				<li><a href="<?php echo get_permalink($rescources_page->ID); ?>"><?php echo get_the_title($rescources_page->ID); ?></a></li>
-				<?php } ?>
-			
-			</ul>
-			
-		</div>
-	<?php } ?>
-	
-	<a href="<?php echo get_permalink($legal_page->ID); ?>" class="header-link"><?php echo get_the_title($legal_page->ID); ?></a>
-	
-	<?php if ($legal_pages) { ?>
-		<div class="list-block">
-	
-			<ul class="list-unstyled">
-			
-				<?php foreach ($legal_pages as $legal_page) { ?>
-									 
-				<li><a href="<?php echo get_permalink($legal_page->ID); ?>"><?php echo $legal_page->post_title; ?></a></li>
-				<?php } ?>
-			
-			</ul>
-			
-		</div>
-	<?php } ?>
-	
-	<?php if ($topics) { ?>
-		<a href="<?php echo get_permalink($news_page->ID); ?>" class="header-link"><?php echo $news_page->post_title; ?>: Categories</a>
-		
-		<div class="list-block">
-			<ul class="list-unstyled">
-		<?php foreach ($topics as $topic) { ?>
+<a href="<?php echo get_permalink($company_page_id); ?>" class="header-link"><?php echo get_the_title($company_page_id); ?></a>
 
-				<li><a href="<?php echo get_category_link($topic->term_id); ?>"><?php echo $topic->name; ?></a></li>
-			
-		<?php } ?>
-			</ul>
-		</div>
-			
-	<?php } ?>
-	
-	<?php if ($subjects) { ?>
-		<h3><?php echo $news_page->post_title; ?>: Tags</h3>
+<?php if ($company_pages) { ?>
+	<div class="list-block">
+
+		<ul class="list-unstyled">
 		
-		<div class="list-block" style="text-transform: capitalize;">
-			<?php wp_tag_cloud('smallest=14&largest=14&unit=px&separator= | '); ?>
-		</div>
-			
-	<?php } ?>
+			<?php foreach ($company_pages as $company_page) { ?>
+			<li><a href="<?php echo get_permalink($company_page->ID); ?>"><?php echo get_the_title($company_page->ID); ?></a></li>
+			<?php } ?>
+		
+		</ul>
+		
+	</div>
+<?php } ?>
+					
+<h3>General</h3>
+
+<?php if ($rescources_pages) { ?>
+	<div class="list-block">
+
+		<ul class="list-unstyled">
+		
+			<?php foreach ($rescources_pages as $rescources_page) { ?>
+			<li><a href="<?php echo get_permalink($rescources_page->ID); ?>"><?php echo get_the_title($rescources_page->ID); ?></a></li>
+			<?php } ?>
+		
+		</ul>
+		
+	</div>
+<?php } ?>
+
+<a href="<?php echo get_permalink($legal_page->ID); ?>" class="header-link"><?php echo get_the_title($legal_page->ID); ?></a>
+
+<?php if ($legal_pages) { ?>
+	<div class="list-block">
+
+		<ul class="list-unstyled">
+		
+			<?php foreach ($legal_pages as $legal_page) { ?>
+								 
+			<li><a href="<?php echo get_permalink($legal_page->ID); ?>"><?php echo $legal_page->post_title; ?></a></li>
+			<?php } ?>
+		
+		</ul>
+		
+	</div>
+<?php } ?>
+
+<?php if ($topics) { ?>
+	<a href="<?php echo get_permalink($news_page->ID); ?>" class="header-link"><?php echo $news_page->post_title; ?>: Categories</a>
 	
-</div>
+	<div class="list-block">
+		<ul class="list-unstyled">
+	<?php foreach ($topics as $topic) { ?>
+
+			<li><a href="<?php echo get_category_link($topic->term_id); ?>"><?php echo $topic->name; ?></a></li>
+		
+	<?php } ?>
+		</ul>
+	</div>
+		
+<?php } ?>
+
+<?php if ($subjects) { ?>
+	<h3><?php echo $news_page->post_title; ?>: Tags</h3>
+	
+	<div class="list-block" style="text-transform: capitalize;">
+		<?php wp_tag_cloud('smallest=14&largest=14&unit=px&separator= | '); ?>
+	</div>
+		
+<?php } ?>

@@ -3,20 +3,21 @@
 		.label {
 		.font-size(1);
 		.line-h(1);
-		.pad-all(1);
+		.pad-all(0.5);
 		.caps;
 		.bg-col-gray;
 		.mag-bot(0.5);
 		}
 		h4 {
 		.col(@grayDk);	
-		.font-size(2.5);
-		.line-h(3);
+		.font-size(2);
+		.line-h(2.5);
+		.bold;
 		}
 		
 		p {
-		.font-size(1.6);
-		.line-h(2);
+		.font-size(1.4);
+		.line-h(1.8);
 		.col(@grayDk);	
 		.mag-bot(0);
 		}
@@ -25,6 +26,8 @@
 		.col(@red);
 		.block;
 		.mag-bot(1);
+		.font-size(1.4);
+		.line-h(1.4);
 		//text-align: center;
 			span {
 			.block;	
@@ -54,7 +57,7 @@
 		.no-text-dec;
 		.mag-top(1.5);
 		.pad-all(0);
-		.line-h(4);
+		.line-h(3);
 		text-align: left;
 		.indent(1.5);
 		.border(@grayDk; 0.1);
@@ -63,7 +66,7 @@
 		.txt-col-grayDk;
 		.font-slab-serif;
 		.caps;
-		.font-size(2);
+		.font-size(1.6);
 		.mag-bot(0);
 			&:after {
 			content: "\f105";	
@@ -71,8 +74,8 @@
 			.abs;
 			.right(0);
 			.top(0);
-			.line-h(4);
-			.h(4);
+			.line-h(3);
+			.h(3);
 			.pad-right(2);	
 			}
 				
@@ -82,18 +85,17 @@
 			}	
 		}
 	}
-	
 }
 
 .search-list {
-	
+
 	article.post, article.page {
 
 		h4 span.search-everything-highlight-color {
 		.col(white);
 		.pad(0; 0.5; 0; 0.5);	
-		.font-size(3);
-		.line-h(3.5);
+		.font-size(2);
+		.line-h(2.5);
 		}
 			
 		time {

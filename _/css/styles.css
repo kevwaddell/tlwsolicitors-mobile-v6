@@ -12637,7 +12637,8 @@ header[role="banner"] .header-action-btns .btn:active {
   color: #4b4b4b;
   font-size: 12px;
   line-height: 12px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #breadcrumbs .breadcrumbs-inner {
   white-space: nowrap;
@@ -12745,16 +12746,16 @@ article.post .label,
 article.tlw_vacancies_cpt .label,
 article.tlw_landing_page .label {
   display: inline-block;
-  font-size: 20px;
-  padding: 0px 15px 0px 15px;
-  line-height: 30px;
-  margin-bottom: 15px;
+  font-size: 14px;
+  padding: 0px 10px 0px 10px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
-article.page .label.label-success,
-article.post .label.label-success,
-article.tlw_vacancies_cpt .label.label-success,
-article.tlw_landing_page .label.label-success {
-  background-color: #ACD15C;
+article.page .label.label-primary,
+article.post .label.label-primary,
+article.tlw_vacancies_cpt .label.label-primary,
+article.tlw_landing_page .label.label-primary {
+  background-color: #2D7EA9;
 }
 article.page .label.label-danger,
 article.post .label.label-danger,
@@ -12773,6 +12774,7 @@ article.tlw_landing_page .vacancy-details {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  margin-bottom: 20px;
 }
 article.page .vacancy-details .panel-heading,
 article.post .vacancy-details .panel-heading,
@@ -12783,8 +12785,9 @@ article.tlw_landing_page .vacancy-details .panel-heading {
   border-radius: 0px;
   background-color: #918F8F;
   color: white;
-  font-size: 20px;
-  border-bottom: 4px solid white;
+  font-size: 16px;
+  border-bottom: 2px solid white;
+  padding: 5px;
 }
 article.page .vacancy-details .table-bordered,
 article.post .vacancy-details .table-bordered,
@@ -12801,15 +12804,13 @@ article.tlw_landing_page .vacancy-details .table-bordered:last-child {
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-article.page .vacancy-details .table-bordered th,
-article.post .vacancy-details .table-bordered th,
-article.tlw_vacancies_cpt .vacancy-details .table-bordered th,
-article.tlw_landing_page .vacancy-details .table-bordered th,
 article.page .vacancy-details .table-bordered td,
 article.post .vacancy-details .table-bordered td,
 article.tlw_vacancies_cpt .vacancy-details .table-bordered td,
 article.tlw_landing_page .vacancy-details .table-bordered td {
-  border: 4px solid white;
+  border: 2px solid white;
+  font-size: 13px;
+  padding: 5px;
 }
 article.page .entry img.alignleft,
 article.post .entry img.alignleft,
@@ -13253,17 +13254,12 @@ article.tlw_vacancies_cpt #content-extra #content-extra-inner ul:last-child,
 article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   padding-right: 70px;
 }
-.search-list {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 5px solid #E9E9E9;
-}
 .post-list article.post .label,
 .post-list article.page .label,
 .post-list article.tlw_vacancies_cpt .label {
   font-size: 10px;
   line-height: 10px;
-  padding: 10px;
+  padding: 5px;
   text-transform: uppercase;
   background-color: #918F8F;
   margin-bottom: 5px;
@@ -13272,14 +13268,15 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
 .post-list article.page h4,
 .post-list article.tlw_vacancies_cpt h4 {
   color: #4b4b4b;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
 }
 .post-list article.post p,
 .post-list article.page p,
 .post-list article.tlw_vacancies_cpt p {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   color: #4b4b4b;
   margin-bottom: 0px;
 }
@@ -13289,6 +13286,8 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   color: #C60751;
   display: block;
   margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 14px;
 }
 .post-list article.post time span,
 .post-list article.page time span,
@@ -13325,7 +13324,7 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   text-decoration: none;
   margin-top: 15px;
   padding: 0px;
-  line-height: 40px;
+  line-height: 30px;
   text-align: left;
   text-indent: 15px;
   border: 1px solid #4b4b4b;
@@ -13338,7 +13337,7 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   font-weight: normal;
   font-stretch: normal;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0px;
 }
 .post-list article.post a:after,
@@ -13349,8 +13348,8 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   position: absolute;
   right: 0px;
   top: 0px;
-  line-height: 40px;
-  height: 40px;
+  line-height: 30px;
+  height: 30px;
   padding-right: 20px;
 }
 .post-list article.post a:hover,
@@ -13369,8 +13368,8 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
 .search-list article.page h4 span.search-everything-highlight-color {
   color: white;
   padding: 0px 5px 0px 5px;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 25px;
 }
 .search-list article.post time,
 .search-list article.page time {
@@ -13600,8 +13599,8 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   margin-right: auto;
   margin-bottom: 10px;
   text-align: center;
-  max-width: 500px;
-  height: 50px;
+  max-width: 300px;
+  height: 40px;
 }
 .search-form-wrap .search-submit {
   position: relative;
@@ -13614,12 +13613,13 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   border: 1px solid #4b4b4b;
   color: #4b4b4b;
   background-color: white;
-  height: 50px;
-  width: 500px;
+  height: 40px;
+  width: 100%;
   padding: 0px;
   margin: 0px;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
+  display: block;
 }
 .search-form-wrap .search-submit:hover,
 .search-form-wrap .search-submit:active,
@@ -13802,10 +13802,11 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
 }
 #toolkit-section a {
   display: block;
-  height: 270px;
+  height: 150px;
   position: relative;
   text-decoration: none;
   overflow: hidden;
+  margin-top: 10px;
 }
 #toolkit-section a span.bg-img {
   position: absolute;
@@ -13839,8 +13840,8 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   text-align: center;
-  line-height: 270px;
-  font-size: 30px;
+  line-height: 150px;
+  font-size: 20px;
   font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -13848,11 +13849,9 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
 #toolkit-section a span.title span {
   display: inline-block;
   vertical-align: middle;
-  line-height: 30px;
+  line-height: 20px;
 }
-#toolkit-section a:hover span.link-bg-img,
-#toolkit-section a:active span.link-bg-img,
-#toolkit-section a:focus span.link-bg-img {
+#toolkit-section a:active span.link-bg-img {
   top: -20px;
   left: -20px;
   right: -20px;
@@ -13863,9 +13862,7 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   -ms-filter: blur(5px);
   filter: blur(5px);
 }
-#toolkit-section a:hover span.title,
-#toolkit-section a:active span.title,
-#toolkit-section a:focus span.title {
+#toolkit-section a:active span.title {
   background-color: #C60751;
   background-color: rgba(198, 7, 81, 0.8);
   color: white;
@@ -13941,9 +13938,6 @@ section#video-banner .banner-title {
 }
 section#video-banner .banner-title span {
   line-height: 20px;
-}
-section#top-banner {
-  margin-bottom: 20px;
 }
 section#top-banner.hp-banner {
   margin-bottom: 0px;
@@ -14424,40 +14418,41 @@ section#contact-us-banner .contact-info a.contact-info-link:active {
   color: #C60751;
 }
 #our-team-section .profile {
-  height: 232px;
   position: relative;
   margin-top: 20px;
   border: 1px solid #4b4b4b;
 }
-#our-team-section .profile .profile-img,
-#our-team-section .profile .profile-txt {
-  height: 230px;
-  position: absolute;
-  top: 0px;
-}
 #our-team-section .profile .profile-img {
-  width: 30%;
-  left: 0px;
+  float: right;
+  width: 100px;
+  height: 100px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  margin: -10px -10px 10px 10px;
   background-repeat: no-repeat;
   background-position: center top;
-  border-right: 1px solid #4b4b4b;
+  border: 1px solid #4b4b4b;
 }
 #our-team-section .profile .profile-txt {
-  width: 70%;
   right: 0px;
   padding: 20px;
 }
 #our-team-section .profile .profile-txt h3 {
   margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
   color: #C60751;
 }
 #our-team-section .profile .profile-txt p {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
 }
 #our-team-section .profile .profile-txt a {
   color: #918F8F;
@@ -14475,27 +14470,31 @@ section#contact-us-banner .contact-info a.contact-info-link:active {
   margin-top: 0px;
 }
 #vacancies-section article.hentry {
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #4b4b4b;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 #vacancies-section article.hentry .close-date {
   background-color: #C60751;
   color: white;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 20px;
   margin-bottom: 10px;
 }
 #vacancies-section article.hentry h4 {
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
 }
 #vacancies-section article.hentry .ref {
   font-weight: bold;
-  color: #4b4b4b;
+  color: #918F8F;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
 }
 #vacancies-section article.hentry .description {
+  font-size: 14px;
+  line-height: 18px;
   margin-bottom: 15px;
 }
 #vacancies-section article.hentry a {
@@ -14503,19 +14502,21 @@ section#contact-us-banner .contact-info a.contact-info-link:active {
   -moz-border-radius: 0px;
   border-radius: 0px;
   border: 1px solid #4b4b4b;
+  background-color: white;
+  color: #4b4b4b;
   position: relative;
   padding: 0px;
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 30px;
+  font-size: 16px;
 }
 #vacancies-section article.hentry a:after {
   position: absolute;
   right: 0px;
   top: 0px;
   height: 100%;
-  line-height: 40px;
+  line-height: 30px;
   padding-right: 20px;
-  font-size: 20px;
+  font-size: 16px;
   font-family: FontAwesome;
   content: "\f105";
 }
@@ -14527,12 +14528,14 @@ section#contact-us-banner .contact-info a.contact-info-link:active {
 #vacancies-section .col-xs-6:nth-child(2) article.hentry {
   margin-top: 0px;
 }
-#cv-send-section {
-  padding-bottom: 20px;
+#cv-send-section p {
+  font-size: 14px;
+  line-height: 16px;
 }
 #cv-send-section p.lead {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 #cv-send-section .btn {
   -webkit-border-radius: 0px;
@@ -14546,10 +14549,12 @@ section#contact-us-banner .contact-info a.contact-info-link:active {
   border: none;
   padding-top: 0px;
   padding-bottom: 0px;
-  line-height: 50px;
+  font-size: 14px;
+  line-height: 40px;
+  margin-bottom: 0px;
 }
 #cv-send-section .btn i {
-  line-height: 50px;
+  line-height: 40px;
 }
 #cv-send-section .btn:active {
   background-color: #C60751;
@@ -15890,25 +15895,20 @@ figure.alignnone {
 .gform_wrapper.two-column_wrapper ul.gform_column li.gsection:first-child {
   display: none;
 }
-#search-form {
-  height: 50px;
-  margin-bottom: 40px;
-}
 #search-form input.search-query {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
   border: 1px solid #4b4b4b;
   max-width: 390px;
-  height: 50px;
+  height: 40px;
   -webkit-appearance: none;
 }
 #search-form .search-submit {
   background-color: white;
   color: #4b4b4b;
   border: 1px solid #4b4b4b;
-  border-left: none;
-  height: 50px;
+  height: 40px;
   padding: 0px;
   margin: 0px;
   text-indent: 20px;
@@ -15924,7 +15924,7 @@ figure.alignnone {
   top: 0px;
   font-family: FontAwesome;
   content: "\f002";
-  line-height: 48px;
+  line-height: 38px;
 }
 #search-form .search-submit:hover,
 #search-form .search-submit:active,
@@ -15948,7 +15948,7 @@ figure.alignnone {
 }
 #search-pop-up .search-pop-up-inner-wrap {
   text-align: center;
-  padding: 20px;
+  padding: 0px;
   height: 100%;
 }
 #search-pop-up .search-pop-up-inner-wrap:before {
@@ -15967,7 +15967,7 @@ figure.alignnone {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   background-color: white;
   border: 1px solid #4b4b4b;
-  padding: 30px;
+  padding: 20px;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -15995,25 +15995,19 @@ figure.alignnone {
 #search-pop-up button#close-search i {
   display: block;
   text-align: center;
-  line-height: 28px;
+  line-height: 20px;
 }
 #search-pop-up #search-form {
   margin-bottom: 0px;
 }
 #search-pop-up #search-form input.search-query {
-  max-width: inherit;
-  width: 70%;
-  float: left;
+  width: 100%;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  margin-bottom: 10px;
 }
-#search-pop-up #search-form .search-btn-wrap {
-  float: right;
-  width: 30%;
-  position: relative;
-}
-#search-pop-up #search-form .search-btn-wrap .search-submit {
+#search-pop-up #search-form .search-submit {
   width: 100%;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -16024,15 +16018,8 @@ figure.alignnone {
   font-stretch: normal;
   font-size: 14px;
 }
-#search-pop-up #search-form .search-btn-wrap .search-submit:active {
+#search-pop-up #search-form .search-submit:active {
   background-color: #4b4b4b;
-  color: white;
-}
-#search-pop-up #search-form .search-btn-wrap i {
-  position: absolute;
-  top: 0px;
-  right: 20px;
-  line-height: 50px;
   color: white;
 }
 #search-pop-up.off {

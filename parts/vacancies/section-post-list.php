@@ -22,7 +22,6 @@ $wp_query = new WP_Query( $args );
 $section_title = "Positions available";	
 $post_count = $wp_query->found_posts;
 ?>
-<div class="rule"></div>
 <section id="vacancies-section" class="pg-section">
 	<div class="container-fluid">
 		<div class="row">
@@ -42,7 +41,8 @@ $post_count = $wp_query->found_posts;
 				?>	
 				<article <?php post_class(); ?>>
 					<div class="close-date text-center">Closing date: <?php echo (empty($job_closing_date)) ? "TBA": date('d.m.Y', strtotime($job_closing_date) ); ?></div>
-					<h4><?php echo $job_title; ?> -  <small class="ref">[ref: <?php echo $job_ref; ?>]</small></h4>
+					<h4><?php echo $job_title; ?></h4>
+					<small class="ref">[ref: <?php echo $job_ref; ?>]</small>
 					<div class="description">
 						<?php echo $short_description; ?>
 					</div>

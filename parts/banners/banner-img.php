@@ -18,4 +18,3 @@ $page_icon = get_field('page_icon', $post->post_parent);
 	</div>
 	<i class="fa <?php echo $page_icon; ?>"></i>
 </section>
-<div class="rule"></div>

@@ -10,28 +10,20 @@ $search_query = get_search_query();
 	
 <article class="page">
 	<div class="container-fluid">	
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<h1 class="text-center" style="margin-top: 20px;">Search Results</h1>
-				<p class="intro text-center">You Searched for: "<?php the_search_query(); ?>"<br> Results: <?php echo $search_count; ?></p>
-				
-				<div class="search-form-wrap">
-				<?php get_search_form(); ?>
-				</div>
-			</div>
+		<h1 class="text-center" style="margin-top: 20px;">Search Results</h1>
+		<p class="intro text-center">You Searched for: "<?php the_search_query(); ?>"<br> Results: <?php echo $search_count; ?></p>
+		
+		<div class="search-form-wrap">
+		<?php get_search_form(); ?>
 		</div>
 	</div>
 </article>
-
+<div class="rule"></div>
 <section class="search-list">
-
 	<?php if ( have_posts() ): ?>
-	
-	<div class="post-list">
-					
+	<div class="post-list">		
 		<div class="container-fluid">	
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
+			
 					<?php while ( have_posts() ) : the_post();
 					$date = get_the_date('l - jS F - Y');
 					 ?>	
@@ -71,10 +63,8 @@ $search_query = get_search_query();
 					<div class="rule"></div>
 	
 					<?php endwhile; ?>
-				</div>
-			</div>
+				
 		</div>	
-
 	</div><!-- End List -->
 	
 	<div class="page-links" style="margin-bottom: 40px;">

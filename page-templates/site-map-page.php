@@ -33,18 +33,11 @@ Template Name: Sitemap page
 <div class="rule"></div>
 <section id="site-map-lists">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="row">
-				<!-- Left -->
-				<?php get_template_part( 'parts/sitemap/column', 'left' ); ?>	
-				
-				<!-- Right -->
-				<?php get_template_part( 'parts/sitemap/column', 'right' ); ?>
-				
-				</div>
-			</div>
-		</div>
+		<!-- Left -->
+		<?php get_template_part( 'parts/sitemap/column', 'left' ); ?>	
+		
+		<!-- Right -->
+		<?php get_template_part( 'parts/sitemap/column', 'right' ); ?>
 	</div>
 </section>
 
