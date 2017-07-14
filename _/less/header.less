@@ -8,6 +8,11 @@ header[role="banner"] {
 .h(5.5);
 z-index: 2;
 .over-hide;
+	
+	@media screen and (orientation: landscape) {
+	transform: translate(0%; -100%);
+	transition: 0.3s ease-in-out;	
+	}
 
 	.container-fluid {
 	.rel;	
@@ -50,5 +55,13 @@ z-index: 2;
 			}	
 		}
 
+	}
+	
+	&.lp-header {
+	text-align: center;
+		a.logo {
+		background-position: center center;
+		.mag-right(0);	
+		}
 	}
 }

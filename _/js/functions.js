@@ -63,6 +63,23 @@
 		mobile: true,
 		width: '100%'
 	});
+	  
+	  //Scroll to button
+		
+	$('body').on(event_type,'a.jump-2-link', function(){
+		var container = $("#main-content");
+		var scrollTo = $("section#form-section");	
+		
+		console.log(scrollTo);
+		
+		container.animate({
+		scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop() - 65
+		});	
+		
+		return false;
+		
+	});
+
 	
 	/* 	MAIN TOP NAVIGATION FUNCTIONS 
 		Button functions to open top navigation and 

@@ -173,7 +173,8 @@ article.tlw_landing_page {
 		.bg-col(@wht);
 		.border(@grayDk; 0.1);
 		.no-rounded;
-		.mag-top(5);
+		.mag-top(3);
+		.pad-all(1);
 			
 			&:last-child {
 			.mag-bot(0);	
@@ -186,16 +187,20 @@ article.tlw_landing_page {
 			}
 			
 			h3.icon-header {
-				.line-h(5);
-				.rounded(4px);
+				.line-h(3);
 				.bg-col(@wht);
 				.border(@grayDk; 0.1);
 				.txt-col-grayDk;
 				.font-slab-serif;
 				.no-rounded;
 				.caps;
-				width: 50%;
-				margin: -50px auto 30px auto;
+				width: 80%;
+				margin: -25px auto 10px auto;
+				
+				@media screen and (orientation: landscape) {
+				width: 60%;
+				}
+
 			}
 		}
 		
