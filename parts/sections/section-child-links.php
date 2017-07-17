@@ -19,13 +19,9 @@ $children = get_pages($children_args);
 <div class="rule"></div>
 <nav class="child-page-links text-center">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
 				<?php foreach ($children as $child) { ?>
-					<a href="<?php echo get_permalink($child->ID); ?>" class="btn btn-default no-border no-rounded"><?php echo get_the_title($child->ID); ?></a>
+					<a href="<?php echo get_permalink($child->ID); ?>" class="btn btn-default btn-block no-border no-rounded"><?php echo get_the_title($child->ID); ?></a>
 				<?php } ?>
-			</div>
-		</div>
 	</div>
 </nav>		
 <?php } ?>

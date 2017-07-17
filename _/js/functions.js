@@ -21,9 +21,13 @@
 		      $('input#input_23_12').val(hash[1]);  
 	        }
 	        
-	         if (hash[0] === "gclid" && $('#input_22_27').length === 1) {
+	        if (hash[0] === "gclid" && $('#input_22_27').length === 1) {
 		      $('input#input_22_27').val(hash[1]);  
 	        }	   
+	       
+	        if (hash[0] === "gclid" && $('#input_26_24').length === 1) {
+		      $('input#input_26_24').val(hash[1]);  
+	        }	
 	        
 	        if (hash[0] === "gclid" ) { 
 		    $.cookie(hash[0], hash[1], {expires: 1, path: '/'});  
@@ -69,8 +73,6 @@
 	$('body').on(event_type,'a.jump-2-link', function(){
 		var container = $("#main-content");
 		var scrollTo = $("section#form-section");	
-		
-		console.log(scrollTo);
 		
 		container.animate({
 		scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop() - 65
@@ -392,7 +394,7 @@
 	$(window).bind('load',function(){
 			
 		//console.log("Loaded");
-		//$('body').removeClass('atfc-tablet-css');
+		//$('body').removeClass('atfc-mobile-css');
 		
 		setTimeout(function(){
         	$('body').removeClass('loading');
