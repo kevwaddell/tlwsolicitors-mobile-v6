@@ -394,7 +394,7 @@
 	$(window).bind('load',function(){
 			
 		//console.log("Loaded");
-		//$('body').removeClass('atfc-mobile-css');
+		$('body').removeClass('atfc-mobile-css');
 		
 		setTimeout(function(){
         	$('body').removeClass('loading');
