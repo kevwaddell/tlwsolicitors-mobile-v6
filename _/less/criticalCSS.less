@@ -647,6 +647,7 @@ font-family: sans-serif;
 		.lg-intro {
 		font-family: @reg-font;
 		color: @gray;
+		font-weight: bold;
 			p {
 			font-size: 16px;
 			line-height: 21px;
@@ -655,6 +656,10 @@ font-family: sans-serif;
 			border: none;
 			.rule;	
 			}	
+			a {
+			color: @gray;
+			text-decoration: none;	
+			}
 		}
 		.gallery-items, .faq-items, .faq-nav {
 		display: none;	
@@ -688,7 +693,6 @@ font-family: sans-serif;
 			height: 34px;
 			text-indent: -9999px;
 			width: 200px;
-			border: 1px solid @gray;
 			margin: -35px auto 20px auto;
 			background-color: @grayLt;
 			color: @grayLt;	
@@ -735,6 +739,54 @@ font-family: sans-serif;
 			color: @grayLt;
 			}
 			
+			}
+		}
+		
+		&#video-section {
+	
+			h2 {	
+			margin-bottom: 10px;
+			}
+			
+			.video-wrapper {
+			height: 160px;
+			margin-top: 15px;
+			background-color: @grayLt;
+				video {
+				display: none;
+				}	
+			}
+			
+			@media screen and (orientation: landscape) {
+				
+				.video-grid {
+				overflow: hidden;
+				margin-top: -15px;
+				}
+				
+				.video-wrapper {
+				float: left;
+				width: 46%;
+				height: 110px;
+				margin-left: 2%;
+				margin-right: 2%;
+				}
+			}
+		}
+		
+		&#downloads-section {
+			
+			a.download-link {
+			display: block;
+			height: 100px;
+			width: 100%;	
+			margin-top: 15px;
+			pointer-events: none;
+			background-color: @grayLt;
+		
+				span.bg-img, span.title {
+				display: none;
+				}
 			}
 		}
 

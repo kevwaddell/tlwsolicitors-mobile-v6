@@ -12459,12 +12459,13 @@ header[role="banner"].lp-header a.logo {
   height: 0px;
 }
 #top-nav.nav-open {
-  height: 85vh;
+  height: 95vh;
   border-bottom: 1px solid #4b4b4b;
+  z-index: 1000;
 }
 #top-nav .nav-wrapper {
   position: relative;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 50px;
   height: 100%;
   overflow-y: scroll;
@@ -12479,27 +12480,12 @@ header[role="banner"].lp-header a.logo {
 }
 #top-nav button#close-nav {
   padding: 0px;
-  position: absolute;
-  left: 50%;
-  bottom: -1px;
-  margin-left: -20px;
+  display: inline-block;
   height: 40px;
   width: 40px;
-  -webkit-border-top-right-radius: 100%;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 100%;
-  -moz-border-radius-topright: 100%;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 100%;
-  border-top-right-radius: 100%;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 100%;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
   background-color: white;
   color: #4b4b4b;
   border: 1px solid #4b4b4b;
@@ -12508,11 +12494,12 @@ header[role="banner"].lp-header a.logo {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  z-index: 2;
+  float: right;
 }
 #top-nav button#close-nav i {
   display: block;
-  margin-top: -10px;
+  line-height: 38px;
+  font-size: 16px;
 }
 #top-nav button#close-nav:active {
   bottom: -5px;
@@ -12521,7 +12508,7 @@ header[role="banner"].lp-header a.logo {
   margin-bottom: 5px;
 }
 #top-nav .top-nav-icon-links a {
-  display: block;
+  display: inline-block;
   color: #4b4b4b;
   text-decoration: none;
   width: 40px;
@@ -14777,11 +14764,6 @@ section#contact-us-banner .contact-info a.contact-info-link:active {
 #downloads-section a.download-link:active span.title:after {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
-}
-#downloads-section .col-xs-4:first-child a.download-link,
-#downloads-section .col-xs-4:nth-child(2) a.download-link,
-#downloads-section .col-xs-4:nth-child(3) a.download-link {
-  margin-top: 0px;
 }
 #gallery-section .gallery-items {
   z-index: 2;
