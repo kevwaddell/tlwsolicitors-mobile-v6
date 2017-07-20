@@ -15226,6 +15226,11 @@ body.nav-open #footer-nav {
 #footer-info .social-links a:active i {
   color: #4b4b4b;
 }
+#footer-info a.feefo-logo {
+  display: block;
+  width: 150px;
+  margin: 0px auto 10px;
+}
 /** --------------------------- /
 /* Xmas styles */
 /* --------------------------- */
