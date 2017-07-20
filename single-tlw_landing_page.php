@@ -9,7 +9,7 @@ $banner_type = get_field('lp_banner_type');
  ?>			
 	<!-- BANNER SECTION -->	
 	<?php if ($banner_type == 'img') { ?>
-		<?php get_template_part( 'parts/landingPage/banner', 'img' ); ?>		
+		<?php get_template_part( 'parts/banners/banner', 'img' ); ?>		
 	<?php } ?>
 	
 	<?php if ($banner_type == 'video') { ?>

@@ -10,6 +10,7 @@ $more_btn_text = $post_content['more_text'];
 $more_btn_text = "Continue Reading";	
 }
 ?>
+<div class="rule"></div>
 <article <?php post_class("content-section"); ?>>
 	
 	<div class="container-fluid">
@@ -34,7 +35,7 @@ $more_btn_text = "Continue Reading";
 		</div>
 
 		<?php if (!empty($post_content['extended'])) { ?>
-		<button id="continue-read-btn" class="btn btn-default btn-block"><?php echo $more_btn_text; ?><i class="fa fa-plus"></i></button>
+		<button id="continue-read-btn" class="btn btn-default btn-block font-slab-serif caps"><?php echo $more_btn_text; ?><i class="fa fa-plus"></i></button>
 		<?php } ?>
 		
 	</div>

@@ -1499,12 +1499,6 @@
 		"oAP": "\/parts\/headers\/header-user.php",
 		"oF": 0
 		},
-	"\/parts\/landingPage\/banner-img.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/landingPage\/banner-img.php",
-		"oF": 0
-		},
 	"\/parts\/landingPage\/banner-video.php": {
 		"ft": 8192,
 		"oA": 2,

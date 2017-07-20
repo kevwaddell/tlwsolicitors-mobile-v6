@@ -37,8 +37,17 @@
 	}
 	
 	getUrlVars();
-
+		
 	$(document).ready(function (){
+		
+		if (window.location.hash) {
+			var container = $("#main-content");
+			var scrollTo = $("section#form-section");	
+				
+			container.animate({
+				scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop() - 65
+			});	
+		}
 		
 	 $('.main-txt > p,h1,h2,h3,h4,h5,h6').widowFix({
 		 letterLimit: 10
@@ -55,6 +64,7 @@
 	 $('a.article-link > span.title span').widowFix({
 			 letterLimit: 10
 	  });
+	  
 	
 	 $(".selectpicker").selectpicker({
       style: 'btn-default btn-lg hp-select',
