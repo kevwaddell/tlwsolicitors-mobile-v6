@@ -13898,36 +13898,30 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   color: white;
 }
 section#slim-top-banner {
-  height: 132px;
   border-top: 2px solid white;
   position: relative;
   overflow: hidden;
 }
 section#slim-top-banner .banner-title {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  z-index: 2;
-  display: inline-block;
-  padding: 10px 10px 1px 15px;
+  padding: 10px 20px 10px 20px;
   background-color: white;
   font-size: 14px;
   line-height: 14px;
-  color: #918F8F;
-  max-width: 70%;
+  color: white;
+  background-color: #C60751;
+  border-top: 2px solid white;
+  text-align: center;
 }
 section#slim-top-banner .img {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
+  position: relative;
+  height: 130px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  overflow: hidden;
 }
 section#slim-top-banner i {
   position: absolute;
@@ -13940,7 +13934,7 @@ section#slim-top-banner i {
   opacity: 0.5;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   filter: alpha(opacity=50);
-  color: #4b4b4b;
+  color: white;
 }
 section#video-banner {
   padding-top: 15px;
@@ -13967,14 +13961,15 @@ section#video-banner video#service-video {
 section#video-banner .banner-title {
   background-color: #C60751;
   margin-top: 0px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 40px;
+  padding: 0px 20px 0px 20px;
   color: white;
 }
 section#video-banner .banner-title span {
   display: inline-block;
   vertical-align: middle;
-  line-height: 16px;
+  line-height: 14px;
 }
 section#top-banner.hp-banner {
   margin-bottom: 0px;

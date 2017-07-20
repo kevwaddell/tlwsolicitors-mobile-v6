@@ -21,5 +21,3 @@ $poster_full_src = wp_get_attachment_image_src($poster_img_id, 'full' );
 	</div>
 	
 </section>
-
-<div class="rule"></div>
