@@ -28,6 +28,11 @@ Template Name: Downloads archive page template
 			<!-- DOWNLOADS SECTION -->
 				<?php get_template_part( 'parts/sections/section', 'downloads' ); ?>			
 			<?php } ?>
+			
+			<?php if ($section['acf_fc_layout'] == 'blog-posts') { ?>
+			<!-- BLOG SECTION -->
+			<?php get_template_part( 'parts/sections/section', 'blog' ); ?>		
+			<?php } ?>
 
 		<?php } ?>
 	

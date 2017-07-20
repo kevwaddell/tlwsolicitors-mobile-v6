@@ -22,11 +22,6 @@
 		<?php if (!empty($hp_sections)) { ?>		
 			<?php foreach ($hp_sections as $section) { ?>
 				
-				<?php if ($section['acf_fc_layout'] == 'feedback-section') { ?>
-				<!-- FEEDBACK SECTION -->
-					<?php get_template_part( 'parts/sections/home/section', 'feedback' ); ?>	
-				<?php } ?>
-				
 				<?php if ($section['acf_fc_layout'] == 'blog-posts') { ?>
 				<!-- BLOG SECTION -->	
 					<?php get_template_part( 'parts/sections/home/section', 'blog' ); ?>	

@@ -21,7 +21,6 @@
 			Archives: <?php echo get_the_date('Y'); ?>
 			<?php } ?>
 			</h2>
-			<div class="row">
 			<?php
 			$post_counter = 0;
 			$posts_per_page = get_query_var('posts_per_page');

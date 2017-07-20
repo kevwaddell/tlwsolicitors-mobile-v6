@@ -28,6 +28,11 @@ Template Name: Videos archive page template
 			<!-- FORM SECTION -->
 				<?php get_template_part( 'parts/sections/section', 'form' ); ?>		
 			<?php } ?>
+			
+			<?php if ($section['acf_fc_layout'] == 'blog-posts') { ?>
+			<!-- BLOG SECTION -->
+			<?php get_template_part( 'parts/sections/section', 'blog' ); ?>		
+			<?php } ?>
 				
 		<?php } ?>
 	

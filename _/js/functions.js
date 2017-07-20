@@ -347,12 +347,19 @@
 			var video = $(video_id).find('video');
 			var video_wrap_id = $(video).attr('id')+"-viewing";
 			
-			$('body').addClass('video-open');
+			var vid = document.getElementById($(video).attr('id'));
+			//vid.mozRequestFullScreen();
+			//vid.webkitEnterFullScreen();
+			
+			console.log(vid);
+			/*
+$('body').addClass('video-open');
 			
 			$('#video-viewer').animate({top: '0px', opacity: 1}, 500, function(){
 				$(this).toggleClass('viewer-closed viewer-open').removeAttr('style');
 				$(video).clone().attr('id', video_wrap_id).appendTo('.video-viewer-inner');
 			});
+*/
 			
 			return false;
 		});

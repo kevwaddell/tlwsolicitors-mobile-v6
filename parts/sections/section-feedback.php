@@ -1,7 +1,6 @@
 <?php
 global $section;
 $feedback_active = $section['feedback_active'];
-$colors = array('purple','green','pink', 'orange', 'blue');
 ?>
 
 <?php if ($feedback_active) { 

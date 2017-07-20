@@ -8,7 +8,7 @@ $search_query = get_search_query();
 //echo '<pre>';print_r($posts);echo '</pre>';
 ?>
 	
-<article class="page">
+<article class="page search-results">
 	<div class="container-fluid">	
 		<h1 class="text-center" style="margin-top: 20px;">Search Results</h1>
 		<p class="intro text-center">You Searched for: "<?php the_search_query(); ?>"<br> Results: <?php echo $search_count; ?></p>

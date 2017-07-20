@@ -11,4 +11,3 @@ $date = get_the_date('l - jS F - Y');
 		</div>
 	</div>
 </section>
-<div class="rule"></div>

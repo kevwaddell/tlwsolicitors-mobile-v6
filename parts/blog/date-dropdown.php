@@ -11,14 +11,11 @@ $archives = wp_get_archives($archives_args);
 //echo '<pre>';print_r($archives);echo '</pre>';
 ?>
 <?php if ($archives) { ?>
-<div class="cats-dropdown">
-	
-	<select id="archive-dd" class="selectpicker" data-width="100%">
-		<option value="0" data-hidden="true">Blog Archives</option>
-		<?php echo $archives; ?>
-	</select>
-	
-</div>
+<select id="archive-dd" class="selectpicker" data-width="100%">
+	<option value="0" data-hidden="true">Blog Archives</option>
+	<?php echo $archives; ?>
+</select>
+
 <script type="text/javascript">
 	<!--
 	var archive_dropdown = document.getElementById("archive-dd");

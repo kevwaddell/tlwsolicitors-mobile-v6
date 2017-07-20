@@ -1,29 +1,25 @@
 .archive-dropdowns {
 	
-	.bootstrap-select .btn:focus {
+	.bootstrap-select { 
+		&:first-child {
+		.mag-bot(1);	
+		}
+		.btn:focus {
 		outline: none !important;	
-	}
-	
-	.dropdown-menu {
-		a {
-		.col(@grayDk);
-			&:hover, &:active, &:focus {
-			.col(@red);
-			}	
-		}		
+		}
 	}
 		
 	.bootstrap-select button {
 	.pad-all(0);
-	.line-h(5);
-	.pad-left(2);
+	.line-h(4);
+	.pad-left(1);
 	.border(@grayDk; 0.1);
 	.no-rounded;
 	.bg-col(@wht);
 	.txt-col-grayDk;
 	.caps;
 	.font-slab-serif;
-	.font-size(2);
+	.font-size(1.6);
 	
 		.caret {
 		.none;	
@@ -36,9 +32,9 @@
 		.right(0);
 		.top(0);
 		.txt-col-grayDk;
-		.line-h(5);
-		.pad-right(2);
-		.font-size(2);	
+		.line-h(4);
+		.pad-right(1);
+		.font-size(1.6);	
 		}
 		
 		&:hover, &:active, &:focus {
@@ -54,22 +50,16 @@
 .pg-section.post-grid {
 	
 	h2.section-header {
-	.mag-bot(2);	
-	}
-	
-	.row {
-	.mag-bot(3);
-		&:last-child {
-		.mag-bot(0);	
-		}	
+	.mag-bot(0.5);	
 	}
 	
 	a {
 		.block;
-		.h(20);
+		.h(15);
 		.rel;
 		.no-text-dec;
 		.over-hide;
+		.mag-top(1.5);
 			
 			span.link-bg-img {
 			.abs;
@@ -94,22 +84,22 @@
 			.txt-col-grayDk;
 			.transition;
 			.text-center;
-			.line-h(20);
-			.font-size(2.5);
+			.line-h(15);
+			.font-size(2);
 			.font-slab-serif;
 				span {
 				.in-block;
 				vertical-align: middle;
-				.line-h(2.5);	
+				.line-h(2);	
 				}	
 			}
 			
 			&:hover, &:active, &:focus {
 				span.link-bg-img {
-				.top(-2);
-				.left(-2);
-				.right(-2);
-				.bottom(-2);
+				.top(-1);
+				.left(-1);
+				.right(-1);
+				.bottom(-1);
 				-webkit-filter: blur(5px);
 				-moz-filter: blur(5px);
 				-o-filter: blur(5px);

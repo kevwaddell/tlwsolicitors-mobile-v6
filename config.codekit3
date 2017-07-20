@@ -1439,12 +1439,6 @@
 		"oAP": "\/parts\/global\/color-strip.php",
 		"oF": 0
 		},
-	"\/parts\/global\/freephone-number.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/global\/freephone-number.php",
-		"oF": 0
-		},
 	"\/parts\/global\/main-masthead.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1479,12 +1473,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/global\/popups\/search-from.php",
-		"oF": 0
-		},
-	"\/parts\/global\/popups\/video-viewer.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/global\/popups\/video-viewer.php",
 		"oF": 0
 		},
 	"\/parts\/global\/popups\/xmas-popup.php": {
@@ -1535,12 +1523,6 @@
 		"oAP": "\/parts\/landingPage\/page-masthead.php",
 		"oF": 0
 		},
-	"\/parts\/landingPage\/panels-sidebar.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/landingPage\/panels-sidebar.php",
-		"oF": 0
-		},
 	"\/parts\/landingPage\/section-content.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1577,28 +1559,10 @@
 		"oAP": "\/parts\/sections\/home\/section-downloads.php",
 		"oF": 0
 		},
-	"\/parts\/sections\/home\/section-feedback.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/sections\/home\/section-feedback.php",
-		"oF": 0
-		},
 	"\/parts\/sections\/home\/section-form.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/sections\/home\/section-form.php",
-		"oF": 0
-		},
-	"\/parts\/sections\/home\/section-toolkit.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/sections\/home\/section-toolkit.php",
-		"oF": 0
-		},
-	"\/parts\/sections\/home\/section-video.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/sections\/home\/section-video.php",
 		"oF": 0
 		},
 	"\/parts\/sections\/section-blog.php": {

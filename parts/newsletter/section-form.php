@@ -14,19 +14,15 @@ $section_title = $form->title;
 <section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section">
 	
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<h2 class="section-header"><?php echo $section_title; ?></h2>
-				<div class="lg-intro">
-				<?php the_content(); ?>
-				</div>
-				<div class="rule"></div>
-				<?php 
-				gravity_form($form->id, false, true, false, '', false); 
-				gravity_form_enqueue_scripts( $form->id );
-				?>
-			</div>
+		<h2 class="section-header"><?php echo $section_title; ?></h2>
+		<div class="lg-intro">
+		<?php the_content(); ?>
 		</div>
+		<div class="rule"></div>
+		<?php 
+		gravity_form($form->id, false, true, false, '', false); 
+		gravity_form_enqueue_scripts( $form->id );
+		?>
 	</div>
 
 </section>

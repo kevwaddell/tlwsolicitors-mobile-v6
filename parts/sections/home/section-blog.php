@@ -33,51 +33,26 @@ $recent_posts_args['category__in'] = $blog_categories;
 }
 
 $recent_posts = get_posts($recent_posts_args);
-
-//echo '<pre class="debug">';print_r($recent_posts);echo '</pre>';
-$cats_args = array(
-	'hide_empty'               => 1,
-	'hierarchical'             => 0
-);
-	
-$cats = get_categories($cats_args);
-
-$archives_args = array(
-	'type'          => 'monthly',
-	'limit'         => '12',
-	'format'        => 'option',
-	'echo'			=> 0
-);
-	
-$archives = wp_get_archives($archives_args);
-
 ?>
 <div class="rule"></div>
 <section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section">
-		<div class="container-fluid">
-			<h2 class="section-header"><?php echo $section_title; ?></h2>
-		</div>	
-		<div id="posts-list-carousel" class="posts-list carousel slide" data-ride="carousel">
-			<div class="carousel-inner" role="listbox">
+	<div class="container-fluid">
+		<h2 class="section-header"><?php echo $section_title; ?></h2>
+		<div class="posts-grid">
 			<?php foreach ($recent_posts as $k => $rpost) { 
 			$ID = $rpost->ID;
-			$date = get_the_date('F jS Y', $ID);
+			$thumb_id = get_post_thumbnail_id($ID);
+			$bg_src = wp_get_attachment_image_src($thumb_id, 'medium' );
 			?>
-			<div class="item<?php echo ($k === 0) ? " active":""; ?>">
-				<div class="container-fluid">
-					<div class="recent-post">
-						<time class="article-date" datetime="<?php get_the_date( 'Y-m-d',  $ID); ?>"><?php echo $date; ?></time>
-						<h3><a href="<?php echo get_permalink($ID); ?>"><?php echo get_the_title($ID); ?></a></h3>
-						<a href="<?php echo get_permalink($ID); ?>" class="view-post-btn">View Article</a>
-					</div>
-				</div>
-			</div>
+			<a href="<?php echo get_permalink($ID); ?>" class="post-link block" title="<?php echo the_title_attribute( array('before' => 'View article: ', 'post'=> $ID)); ?>">
+				<span class="link-bg-img" style="background-image: url(<?php echo $bg_src[0]; ?>)"></span>
+				<span class="title"><span><?php echo get_the_title($ID); ?></span></span>
+			</a>
 			<?php } ?>
-			</div>
 		</div>
-			
-		<div class="container-fluid">
-			
-		</div>
+	</div>
+	<!-- DROPDOWN SECTION -->
+	<?php get_template_part( 'parts/blog/archive', 'dropdowns' ); ?>
+	
 </section>
 <?php } ?>

@@ -37,11 +37,6 @@ Template Name: General Service page
 	
 		<?php foreach ($sections as $section) { ?>
 			
-			<?php if ($section['acf_fc_layout'] == 'feedback-section') { ?>
-			<!-- FEEDBACK SECTION -->
-				<?php get_template_part( 'parts/sections/section', 'feedback' ); ?>		
-			<?php } ?>
-			
 			<?php if ($section['acf_fc_layout'] == 'faqs-section') { ?>
 			<!-- FAQ'S SECTION -->
 				<?php get_template_part( 'parts/sections/section', 'faqs' ); ?>		
@@ -57,21 +52,6 @@ Template Name: General Service page
 				<?php get_template_part( 'parts/sections/section', 'blog' ); ?>		
 			<?php } ?>
 			
-			<?php if ($section['acf_fc_layout'] == 'downloads-section') { ?>
-			<!-- DOWNLOADS SECTION -->
-				<?php get_template_part( 'parts/sections/section', 'downloads' ); ?>			
-			<?php } ?>
-			
-			<?php if ($section['acf_fc_layout'] == 'video-section') { ?>
-			<!-- VIDEO SECTION -->
-				<?php get_template_part( 'parts/sections/section', 'video' ); ?>		
-			<?php } ?>
-			
-			<?php if ($section['acf_fc_layout'] == 'toolkit-section') { ?>
-			<!-- TOOLKIT SECTION -->
-				<?php get_template_part( 'parts/sections/section', 'toolkit' ); ?>		
-			<?php } ?>
-
 		<?php } ?>
 	
 	<?php } ?>
