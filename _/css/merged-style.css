@@ -13689,7 +13689,8 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
 #site-map-lists a.header-link:after {
   position: absolute;
   right: 10px;
-  top: 0px;
+  top: 50%;
+  margin-top: -14px;
   line-height: 28px;
   font-family: FontAwesome;
   content: "\f105";
