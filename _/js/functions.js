@@ -65,6 +65,10 @@
 			 letterLimit: 10
 	  });
 	  
+	  $('a.header-link').widowFix({
+			 letterLimit: 10
+	  });
+	  
 	
 	 $(".selectpicker").selectpicker({
       style: 'btn-default btn-lg hp-select',
