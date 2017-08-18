@@ -65,7 +65,7 @@
 			 letterLimit: 10
 	  });
 	  
-	  $('#site-map-lists > a.header-link').widowFix({
+	  $('#site-map-lists a.header-link').widowFix({
 			 letterLimit: 10
 	  });
 	  
