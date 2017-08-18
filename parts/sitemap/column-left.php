@@ -53,9 +53,9 @@ $service_args = array(
 
 $service_children = get_posts($service_args);
  ?>
-
+ 	<a href="<?php echo get_permalink($service->ID); ?>" class="header-link"><?php echo $service->post_title; ?></a>
+	
 	<div class="list-block">
-		<a href="<?php echo get_permalink($service->ID); ?>" class="header-link"><?php echo $service->post_title; ?></a>
 		
 	<?php if ($service_children) { ?>
 		
