@@ -13672,8 +13672,7 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
 #site-map-lists a.header-link {
   position: relative;
   display: block;
-  height: 30px;
-  line-height: 28px;
+  line-height: 18px;
   font-size: 16px;
   font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -13682,6 +13681,9 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   color: #4b4b4b;
   text-decoration: none;
   padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   margin-bottom: 10px;
 }
 #site-map-lists a.header-link:after {
