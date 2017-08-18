@@ -13,22 +13,8 @@ $services = get_posts($services_args);
 
 $videos_pg_id = get_page_id('videos');
 $downloads_pg_id = get_page_id('downloads');
+$toolkits_pg_id = get_page_id('tlw-toolkits');
 ?>
-	
-	
-	<h3>TLW Media</h3>
-
-	<div class="list-block">
-
-		<ul class="list-unstyled">
-		
-			<li><a href="<?php echo get_permalink($videos_pg_id); ?>"><?php echo get_the_title($videos_pg_id); ?></a></li>
-			<li><a href="<?php echo get_permalink($downloads_pg_id); ?>"><?php echo get_the_title($downloads_pg_id); ?></a></li>
-			
-		</ul>
-		
-	</div>
-
 <?php if ($media_pages) { ?>
 	
 	<h3>TLW Media</h3>
@@ -103,4 +89,19 @@ $service_children = get_posts($service_args);
 <?php } ?>
 
 	<?php } ?>
+	
+	
+<h3>TLW Media</h3>
+
+<div class="list-block">
+
+	<ul class="list-unstyled">
+		
+		<li><a href="<?php echo get_permalink($toolkits_pg_id); ?>"><?php echo get_the_title($toolkits_pg_id); ?></a></li>
+		<li><a href="<?php echo get_permalink($videos_pg_id); ?>"><?php echo get_the_title($videos_pg_id); ?></a></li>
+		<li><a href="<?php echo get_permalink($downloads_pg_id); ?>"><?php echo get_the_title($downloads_pg_id); ?></a></li>
+		
+	</ul>
+	
+</div>
 					
