@@ -14864,6 +14864,7 @@ section#contact-us-banner .contact-info a.contact-info-link:active {
 }
 #wide-map .google-maps {
   width: 100%;
+  height: 100%;
 }
 #wide-map .location-box address {
   padding: 15px 0px 15px 0px;
