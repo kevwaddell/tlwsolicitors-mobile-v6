@@ -62,11 +62,10 @@ function initMap() {
 			 mapTypeIds: [google.maps.MapTypeId.ROADMAP, TLW_MAPTYPE_ID]
 		}
 		};
-		
+		 	
 	wide_map = new google.maps.Map(document.getElementById('wide-map-canvas'), mapOptions);
 		
 	marker = new google.maps.Marker({position: myLatLang, map: wide_map, icon: image, title: "TLW Solicitors"});
-	
 };
 	
 </script>
