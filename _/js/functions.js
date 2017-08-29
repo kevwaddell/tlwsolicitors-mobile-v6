@@ -416,12 +416,13 @@ $('body').addClass('video-open');
 		
 		setTimeout(function(){
         	$('body').removeClass('loading');
+        	
+        	if ($('#wide-map-canvas').length === 1) {
+			initMap();	
+			}
+			
 		}, 2000);
-		
-		if ($('#wide-map-canvas').length === 1) {
-		wide_map_init();	
-		}
-		
+
 		$('.has-bg-img').each(function(index, Element) {
 				var src = $(Element).data('src');
 				//console.log(src);
