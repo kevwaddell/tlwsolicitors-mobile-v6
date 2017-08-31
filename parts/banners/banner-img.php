@@ -15,6 +15,6 @@ $page_icon = get_field('page_icon', $post->post_parent);
 		<i class="fa <?php echo $page_icon; ?>"></i>
 	</div>
 	<header class ="banner-title font-slab-serif caps">
-		<?php echo get_the_title($post->post_parent); ?>
+		<?php the_title(); ?>
 	</header>
 </section>

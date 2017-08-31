@@ -12710,13 +12710,13 @@ h5 {
 }
 h1,
 h2 {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 24px;
   margin-bottom: 20px;
 }
 h1 small,
 h2 small {
-  font-size: 16px;
+  font-size: 14px;
 }
 p,
 ul,
@@ -12734,7 +12734,7 @@ p.lead {
   font-weight: bold;
   color: #4b4b4b;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
 }
 article.page .service-label,
 article.post .service-label,
@@ -13213,30 +13213,11 @@ article.page .main-txt h5,
 article.post .main-txt h5,
 article.tlw_vacancies_cpt .main-txt h5,
 article.tlw_landing_page .main-txt h5 {
-  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-}
-article.page .main-txt h2,
-article.post .main-txt h2,
-article.tlw_vacancies_cpt .main-txt h2,
-article.tlw_landing_page .main-txt h2,
-article.page .main-txt h3,
-article.post .main-txt h3,
-article.tlw_vacancies_cpt .main-txt h3,
-article.tlw_landing_page .main-txt h3,
-article.page .main-txt h4,
-article.post .main-txt h4,
-article.tlw_vacancies_cpt .main-txt h4,
-article.tlw_landing_page .main-txt h4,
-article.page .main-txt h5,
-article.post .main-txt h5,
-article.tlw_vacancies_cpt .main-txt h5,
-article.tlw_landing_page .main-txt h5 {
+  font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 10px;
-  color: #918F8F;
+  color: #4b4b4b;
 }
 article.page #content-extra.closed,
 article.post #content-extra.closed,
