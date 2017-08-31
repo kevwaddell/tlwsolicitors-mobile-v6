@@ -30,13 +30,16 @@ min-height: 100%;
 .bg-col(@wht);
 overflow:hidden;
 opacity: 1;
+
+	&.loading {
+	overflow: hidden;	
+	}
 	
 	&.nav-open, 
 	&.modal-open,
 	&.search-open,
 	&.route-finder-open,
-	&.video-open,
-	&.loading {
+	&.video-open {
 	overflow: hidden;
 		.tlw-wrapper > * {
 		-webkit-filter: blur(5px);
