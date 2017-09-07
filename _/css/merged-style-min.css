@@ -3,7 +3,6 @@ Default style for WP-PageNavi plugin
 
 http://wordpress.org/extend/plugins/wp-pagenavi/
 */
-@import url(https://fonts.googleapis.com/css?family=Lobster);
 .wp-pagenavi { clear: both; }
 
 .wp-pagenavi a, .wp-pagenavi span { text-decoration: none; border: 1px solid #BFBFBF; padding: 3px 5px; margin: 2px; }
