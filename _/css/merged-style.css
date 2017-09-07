@@ -12187,23 +12187,11 @@ Copyright (c) 2014 Daniel Eden
 .rule:before {
   bottom: -1px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%);
-  /*
-background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(@gray));
-	background-image: -webkit-linear-gradient(left, transparent, @gray);
-	background-image: -moz-linear-gradient(left, transparent, @gray);
-	background-image: -o-linear-gradient(left, transparent, @gray);
-*/
 }
 .rule:after {
   right: 0px;
   bottom: -1px;
   background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 50%);
-  /*
-background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@gray), to(transparent));
-	background-image: -webkit-linear-gradient(left, @gray, transparent);
-	background-image: -moz-linear-gradient(left, @gray, transparent);
-	background-image: -o-linear-gradient(left, @gray, transparent);
-*/
 }
 .clearfix:before,
 .clearfix:after {
@@ -12898,12 +12886,6 @@ article.tlw_vacancies_cpt hr:before,
 article.tlw_landing_page hr:before {
   bottom: -1px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%);
-  /*
-background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(@gray));
-	background-image: -webkit-linear-gradient(left, transparent, @gray);
-	background-image: -moz-linear-gradient(left, transparent, @gray);
-	background-image: -o-linear-gradient(left, transparent, @gray);
-*/
 }
 article.page hr:after,
 article.post hr:after,
@@ -12912,12 +12894,6 @@ article.tlw_landing_page hr:after {
   right: 0px;
   bottom: -1px;
   background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 50%);
-  /*
-background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@gray), to(transparent));
-	background-image: -webkit-linear-gradient(left, @gray, transparent);
-	background-image: -moz-linear-gradient(left, @gray, transparent);
-	background-image: -o-linear-gradient(left, @gray, transparent);
-*/
 }
 article.page .main-txt p:last-child,
 article.post .main-txt p:last-child,
