@@ -12,7 +12,7 @@ $banner_parts = get_field('banner_parts');
 	<ul class="text-center list-unstyled clearfix banner-links-imgs links-total-<?php echo $links_total; ?>">
 		<?php foreach ($banner_service_links as $bl) { 
 		$thumb_id = get_post_thumbnail_id($bl['link_page']);
-		$bg_full_src = wp_get_attachment_image_src($thumb_id, 'full' );
+		$bg_full_src = wp_get_attachment_image_src($thumb_id, 'medium' );
 		$bg_thumb_src = wp_get_attachment_image_src($thumb_id, 'thumbnail' );	
 		?>
 		<li>
