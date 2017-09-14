@@ -26,18 +26,15 @@
 	
 	<script>
 		var loadDeferredStyles = function() {
-		var addStylesNode = document.getElementById("deferred-styles");
-		var gfStylesNode = document.getElementById("gf-deferred-styles");
-		var replacement = document.createElement("div");
-		var criticalCSS = document.getElementById("critical-css");
-		replacement.innerHTML = gfStylesNode.textContent + addStylesNode.textContent;
-		document.body.appendChild(replacement);
-		gfStylesNode.parentElement.removeChild(gfStylesNode);
-		addStylesNode.parentElement.removeChild(addStylesNode);
-		document.body.classList.remove("atfc-mobile-css");
-		criticalCSS.parentNode.removeChild(criticalCSS);
+			var addStylesNode = document.getElementById("deferred-styles");
+			var gfStylesNode = document.getElementById("gf-deferred-styles");
+			var replacement = document.createElement("div");
+			replacement.innerHTML = gfStylesNode.textContent + addStylesNode.textContent;
+			document.body.appendChild(replacement);
+			gfStylesNode.parentElement.removeChild(gfStylesNode);
+			addStylesNode.parentElement.removeChild(addStylesNode);
 		};
-	 
+			 
 		var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
 	  if (raf) { 
 		  raf(function() { 

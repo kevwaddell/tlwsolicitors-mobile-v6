@@ -361,13 +361,14 @@ max-width: 100% !important;
 	.mag-bot(0);	
 	}
 	
-	.gform_description {
+	.gform_wrapper .gform_description {
 	.txt-col-gray;	
 	.pad-top(0);
 	.bold;
 	.font-size(1.4);
 	.line-h(1.6);
 	.mag-bot(1);
+	width: 100%;
 		br {
 		.none;	
 		}
@@ -775,9 +776,11 @@ overflow: hidden;
 		span.gform_description {
 		.bold;	
 		.font-size(1.4);
+		width: 100%;
 			span {
 			.txt-col-red;	
 			.font-size(1);
+			.block;
 			}
 		}
 	}
