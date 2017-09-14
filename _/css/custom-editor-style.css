@@ -263,6 +263,7 @@
 }
 .rule:before {
   bottom: -1px;
+  left: 0px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%);
 }
 .rule:after {

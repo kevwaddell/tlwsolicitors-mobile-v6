@@ -12385,6 +12385,7 @@ Copyright (c) 2014 Daniel Eden
 }
 .rule:before {
   bottom: -1px;
+  left: 0px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%);
 }
 .rule:after {
@@ -13162,6 +13163,7 @@ article.post hr:before,
 article.tlw_vacancies_cpt hr:before,
 article.tlw_landing_page hr:before {
   bottom: -1px;
+  left: 0px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%);
 }
 article.page hr:after,

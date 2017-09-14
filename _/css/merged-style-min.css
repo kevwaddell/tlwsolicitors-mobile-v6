@@ -5737,7 +5737,7 @@ Copyright (c) 2014 Daniel Eden
 
 .rule:before, .rule:after { content: ""; position: absolute; height: 1px; width: 50%; }
 
-.rule:before { bottom: -1px; background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%); }
+.rule:before { bottom: -1px; left: 0px; background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%); }
 
 .rule:after { right: 0px; bottom: -1px; background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 50%); }
 
@@ -5984,7 +5984,7 @@ article.page hr.mag-top-30, article.post hr.mag-top-30, article.tlw_vacancies_cp
 
 article.page hr:before, article.post hr:before, article.tlw_vacancies_cpt hr:before, article.tlw_landing_page hr:before, article.page hr:after, article.post hr:after, article.tlw_vacancies_cpt hr:after, article.tlw_landing_page hr:after { content: ""; position: absolute; height: 1px; width: 50%; }
 
-article.page hr:before, article.post hr:before, article.tlw_vacancies_cpt hr:before, article.tlw_landing_page hr:before { bottom: -1px; background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%); }
+article.page hr:before, article.post hr:before, article.tlw_vacancies_cpt hr:before, article.tlw_landing_page hr:before { bottom: -1px; left: 0px; background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%); }
 
 article.page hr:after, article.post hr:after, article.tlw_vacancies_cpt hr:after, article.tlw_landing_page hr:after { right: 0px; bottom: -1px; background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 50%); }
 
