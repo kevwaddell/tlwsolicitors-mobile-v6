@@ -422,7 +422,7 @@ $('body').addClass('video-open');
         	
         	$('#loader').fadeOut('300', function(){	
         		$('body').removeClass('loading atfc-mobile-css');
-				$('document').find("#critical-css").remove();
+				$('head').find("#critical-css").remove();
 			});
         	
         	if ($('#wide-map-canvas').length === 1) {

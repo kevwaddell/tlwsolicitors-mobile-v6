@@ -5863,7 +5863,7 @@ header[role="banner"].lp-header a.logo { background-position: center center; mar
 
 #top-nav.nav-closed { height: 0px; }
 
-#top-nav.nav-open { height: 95vh; border-bottom: 1px solid #4b4b4b; z-index: 1000; }
+#top-nav.nav-open { height: 80vh; border-bottom: 1px solid #4b4b4b; z-index: 1000; }
 
 #top-nav .nav-wrapper { position: relative; padding-top: 15px; padding-bottom: 50px; height: 100%; overflow-y: scroll; }
 

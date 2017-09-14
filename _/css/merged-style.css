@@ -12755,7 +12755,7 @@ header[role="banner"].lp-header a.logo {
   height: 0px;
 }
 #top-nav.nav-open {
-  height: 95vh;
+  height: 80vh;
   border-bottom: 1px solid #4b4b4b;
   z-index: 1000;
 }
