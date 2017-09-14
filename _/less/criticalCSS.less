@@ -93,6 +93,12 @@ font-family: sans-serif;
 
 	}
 	
+	@media screen and (orientation: landscape) {
+		.container-fluid {
+		.max-w(45);
+		}	
+	}
+	
 	.tlw-wrapper {
 	position: relative;
 	background-color: white;
@@ -367,7 +373,7 @@ font-family: sans-serif;
 	.pad-top(1.5);	
 		.video-wrapper {
 		.rel;
-		.h(16.2);
+		.h(19.5);
 		.over-hide;
 		.border(@grayDk; 0.1);
 		.mag-bot(1.5);
@@ -377,11 +383,7 @@ font-family: sans-serif;
 		}
 		
 		video#service-video { 
-		.abs;
-		.top(0);
-		.left(0);
-	    width: 100%;
-		height: auto;
+		.none;
 		}
 		
 		.banner-title {

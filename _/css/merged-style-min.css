@@ -6208,7 +6208,7 @@ section#slim-top-banner i { position: absolute; right: -10px; top: 0px; font-siz
 
 section#video-banner { padding-top: 15px; }
 
-section#video-banner .video-wrapper { position: relative; height: 162px; overflow: hidden; border: 1px solid #4b4b4b; margin-bottom: 15px; }
+section#video-banner .video-wrapper { position: relative; height: 195px; overflow: hidden; border: 1px solid #4b4b4b; margin-bottom: 15px; }
 
 @media screen and (orientation: landscape) { section#video-banner .video-wrapper { height: 235px; } }
 
