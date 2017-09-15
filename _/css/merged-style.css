@@ -15105,7 +15105,7 @@ section#contact-us-banner .contact-info a.contact-info-link:active {
 #wide-map .container-fluid {
   position: relative;
 }
-#wide-map #wide-map-canvas {
+#wide-map #map-canvas {
   width: 100%;
   height: 250px;
 }

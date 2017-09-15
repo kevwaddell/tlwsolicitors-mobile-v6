@@ -1,6 +1,10 @@
 (function($){
 	var tagInterval;
 	var event_type = 'touchstart';
+	var TLW_MAP_ID = 'TLW_style';
+	var wide_map;
+	var TLW_MAPTYPE_ID = 'wide_map';
+	var marker;
 	
 	jQuery.fn.scrollTo = function(elem, speed) { 
     $(this).animate({
@@ -41,6 +45,19 @@
 	}
 	
 	getUrlVars();
+	
+	function initMap(lat, lgn) {
+		
+		var uluru = {lat: lat, lng: lgn};
+		var map = new google.maps.Map(document.getElementById('map-canvas'), {
+		          zoom: 14,
+		          center: uluru
+		        });
+		var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+	};
 		
 	$(document).ready(function (){
 		
@@ -369,7 +386,7 @@
 			//vid.mozRequestFullScreen();
 			//vid.webkitEnterFullScreen();
 			
-			console.log(vid);
+			//console.log(vid);
 			/*
 $('body').addClass('video-open');
 			
@@ -417,11 +434,14 @@ $('body').addClass('video-open');
 	});	
 	
 	$(window).bind('load',function(){
-		/*
-if ($('#wide-map-canvas').length === 1) {
-		initMap();	
+		
+		if ($('#map-canvas').length === 1) {
+			$.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo&sensor=false", function(){
+			var lat = $('#map-canvas').data('lat');
+			var lng = $('#map-canvas').data('lng');
+			initMap(lat, lng);		
+			});
 		}
-*/
 			
 		setTimeout(function(){
         	
