@@ -417,7 +417,12 @@ $('body').addClass('video-open');
 	});	
 	
 	$(window).bind('load',function(){
-		
+		/*
+if ($('#wide-map-canvas').length === 1) {
+		initMap();	
+		}
+*/
+			
 		setTimeout(function(){
         	
         	$('#loader').fadeOut('300', function(){	
@@ -425,10 +430,6 @@ $('body').addClass('video-open');
 				$('head').find("#critical-css").remove();
 			});
         	
-        	if ($('#wide-map-canvas').length === 1) {
-			initMap();	
-			}
-			
 		}, 2000);
 
 		$('.has-bg-img').each(function(index, Element) {

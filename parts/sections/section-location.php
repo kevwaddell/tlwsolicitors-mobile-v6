@@ -13,7 +13,7 @@ $map_active = $section['map_active'];
 	$section_title = "Location map";
 	}
 	//echo '<pre>';print_r($location);echo '</pre>';
-	$map_marker = get_stylesheet_directory_uri()."/_/img/map-marker.png";
+	$map_marker = get_template_directory_uri()."/_/img/map-marker.png";
 	
 	//echo $map_marker;
 ?>
@@ -22,7 +22,7 @@ $map_active = $section['map_active'];
 <section id="wide-map" class="pg-section">
 	<div class="container-fluid">
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
-		<div id="wide-map-canvas"></div>
+		<div id="wide-map-canvas" style="height: 250px;"></div>
 		<div class="location-box">
 			<address>
 				<span class="company bold caps col-red font-size-25"><?php bloginfo('name'); ?></span><br>
@@ -33,6 +33,7 @@ $map_active = $section['map_active'];
 		</div>
 	</div>
 </section>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo"></script>
 <script>
 function initMap() {
 	var TLW_MAP_ID = 'TLW_style';
@@ -63,10 +64,12 @@ function initMap() {
 		}
 		};
 		 	
+	//wide_map = new google.maps.Map(document.getElementById('wide-map-canvas'), mapOptions);
+	
 	wide_map = new google.maps.Map(document.getElementById('wide-map-canvas'), mapOptions);
 		
 	marker = new google.maps.Marker({position: myLatLang, map: wide_map, icon: image, title: "TLW Solicitors"});
 };
+window.addEventListener('load', initMap); 
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo&callback=initMap" async defer></script>
 <?php } ?>
