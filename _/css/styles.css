@@ -12726,6 +12726,7 @@ header[role="banner"].lp-header a.logo {
 }
 #breadcrumbs a {
   color: #4b4b4b;
+  text-decoration: none;
 }
 #breadcrumbs a:active {
   color: #C60751;
@@ -14206,43 +14207,15 @@ section#contact-us-banner .contact-info a.contact-info-link:active {
     float: left;
     width: 50%;
     padding: 10px 20px 0px 20px;
-    margin-bottom: 0px;
     font-size: 14px;
     line-height: 14px;
   }
 }
 .hp-sidebar .feefo-panel .star-rating {
+  clear: both;
   position: relative;
-  height: 30px;
-  width: 70%;
   margin: auto;
-}
-@media screen and (orientation: landscape) {
-  .hp-sidebar .feefo-panel .star-rating {
-    clear: both;
-    height: 45px;
-  }
-}
-.hp-sidebar .feefo-panel .star-rating .col-bar {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  background-color: #ffde0f;
-}
-.hp-sidebar .feefo-panel .star-rating .stars {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/feefo-stars.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  color: #ffde0f;
 }
 .pg-section h2.section-header {
   font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;

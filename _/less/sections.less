@@ -268,39 +268,16 @@ section#contact-us-banner {
 			.fleft;
 			width: 50%;	
 			.pad(1;2;0;2);
-			.mag-bot(0);
 			.font-size(1.4);
 			.line-h(1.4);
 			}
 		}
 		
 		.star-rating {
+		.clear;
 		.rel;
-		.h(3);
-		width: 70%;
 		margin: auto;
-			@media screen and (orientation: landscape) {
-			clear: both;	
-			.h(4.5);
-			}
-			.col-bar {
-			position: absolute;
-			.top(0);
-			.left(0);
-			height: 100%;
-			.bg-col(@feefoCol);	
-			}
-			.stars {
-			position: absolute;
-			.top(0);
-			.left(0);
-			height: 100%;
-			width: 100%;
-			.bg-img('feefo-stars.png');
-			.bg-repeat(no-repeat);
-			background-position: center center;
-			.bg-size();	
-			}		
+		.col(@feefoCol);
 		}
 	}
 }
