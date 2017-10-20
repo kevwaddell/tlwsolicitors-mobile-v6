@@ -10,7 +10,7 @@ global $post;
 <footer id="footer-nav">
 	<nav class="links">
 		<?php if (!empty($freephone_num)) { ?>
-		<a href="tel:<?php echo str_replace(' ', '', $freephone_num); ?>" onclick="ga('send', 'event','Freephone click', 'tap', '<?php echo $post->post_title; ?> - Call back')" title="Call us now"><i class="fa fa-phone"></i><span class="title">Call us</span></a>
+		<a href="tel:<?php echo str_replace(' ', '', $freephone_num); ?>" id="number_link" onclick="ga('send', 'event','Freephone click', 'tap', '<?php echo $post->post_title; ?> - Call back')" title="Call us now"><i class="fa fa-phone"></i><span class="title">Call us</span></a>
 		<?php } ?>
 		<a href="<?php echo get_permalink( $contact_pg->ID ); ?>" title="Contact us"><i class="fa fa-envelope"></i><span class="title"><?php echo get_the_title( $contact_pg->ID ); ?></span></a>
 		<?php if ($post->ID == $sitemap_pg->ID || is_search()) { ?>
