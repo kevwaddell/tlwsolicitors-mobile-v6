@@ -5,7 +5,7 @@ $freephone_num = get_field('freephone_num', 'option');
 ?>	
 
 <?php if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') { ?>
-<body <?php body_class($body_classes); ?> onload="_googWcmGet(callback, <?php echo str_replace(' ', '', $freephone_num); ?>)">
+<body <?php body_class($body_classes); ?> onload="_googWcmGet(callback, <?php echo str_replace(' ', '-', $freephone_num); ?>)">
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PLBR4F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager -->
