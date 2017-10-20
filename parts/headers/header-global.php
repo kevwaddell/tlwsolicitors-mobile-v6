@@ -14,8 +14,6 @@
 		  var callback = function(formatted_number, mobile_number) {
 	      var e = document.getElementById("number_link");
 	      e.href = "tel:" + mobile_number;
-	      e.innerHTML = "";
-	      e.appendChild(document.createTextNode(formatted_number));
 	    };
 	 </script>
 	<!-- Adwords Call tracking -->
