@@ -1,35 +1,41 @@
 #xmas-popup-btn-wrap {
-.rel;
+.abs;
+.left(0);
 width: 100%;
 //.h(7);
 text-align: center;
 //.animated;
 .transition(0.3s, ease-in-out);
-	.wrap-inner {
-	.h(7);
-	.border-bot(@wht; 0.4);
-	.bg-col(darken(@green, 20%));		
-	}
+.pad(1;6;1;6);
+.bg-col(darken(@green, 20%));	
+z-index: 10;
 	
 	p {
-	.line-h(6.6);	
+	.line-h(1.6);	
 	.col(white);
 	.bold;
-	.font-size(1.6);
+	.font-size(1.4);
+	.mag-bot(0.5);
+		@media only screen and (orientation: landscape)  { 
+			br {
+			.none;	
+			}	
+		}
 	}
 
 	&.pop-up-inactive {
-	.h(7);
-	//.bottom(0);	
-	//animation-delay: 2s;
-	//.animate-delay(2s);
+	//.h(7);
+	.bottom(0);
+	transform: translateY(-50px);
 	.slideInUp;
+		@media only screen and (orientation: landscape)  { 
+			display: none;
+		}
 	}
 	
 	&.pop-up-active {
-	.h(0);
-	//.bottom(-7);
-	.slideInDown;	
+	transform: translateY(100%);
+	//.bottom(-7);	
 	}
 	
 	.btn {
@@ -54,24 +60,25 @@ text-align: center;
 		}
 	}
 	
-	.holly {
+	&:before, &:after {
+	content: "";
 	.abs;
-	.top(0.3);	
+	.bottom(1);	
 	background-position: center center;	
 	.bg-repeat(no-repeat);
 	.bg-size(contain);
 	.w(6);
 	.h(6);
+	}
 	
-		&.left {
-		.left(1);	
-		.bg-img('holly-tr.png');
-		}
-		
-		&.right {
-		.right(1);	
-		.bg-img('holly-tl.png');
-		}
+	&:before {
+	.left(1);	
+	.bg-img('holly-tr.png');
+	}
+	
+	&:after {
+	.right(1);	
+	.bg-img('holly-tl.png');
 	}
 	
 }
@@ -88,7 +95,6 @@ z-index: 1000;
 
 	.xmas-popup-inner-wrap {
 		text-align: center;	
-		.pad-all(2);
 		height: 100%;
 		z-index: 2;
 		.rel;
@@ -105,7 +111,7 @@ z-index: 1000;
 	.xmas-popup-inner {
 	.in-block;
 	vertical-align: middle;
-	width: 80%;
+	width: 90%;
 	.rounded(20px);
 	.drop-shadow(0, 0, 20px, 0.7);
 	.bg-col(white);
@@ -113,25 +119,31 @@ z-index: 1000;
 	.bg-repeat(no-repeat);
 	background-position: center bottom;
 	.bg-size(50%);
-	.pad(2; 2; 22; 2);
+	.pad(2; 2; 13; 2);
 	text-align: left;
 	.rel;
 	
 		@media only screen and (orientation: landscape)  {
-		.bg-size(40%);
-		.pad-bot(24);
+		background-image: none;
+		.pad-bot(4);
 		}
 	
 		h3 {
 		font-family: 'Lobster', cursive;
 		.col(@red);
-		.font-size(5);
-		.mag-bot(2);
+		.font-size(3);
+		.mag-bot(1);
 		}
 		
 		p {
 		.bold;
+		.font-size(1.4);
 		.mag-bot(1);	
+			@media only screen and (orientation: landscape)  { 
+				br {
+				.none;	
+				}	
+			}
 		}
 		
 		@media only screen and (orientation: landscape)  {
@@ -171,25 +183,25 @@ z-index: 1000;
 		
 		.holly {
 		.abs;
-		.w(10);
-		.h(10);
+		.w(5);
+		.h(5);
 		background-position: center center;	
 		.bg-repeat(no-repeat);
 		.bg-size(contain);
 			&.tl, &.tr {
-			.top(-5);
+			.top(-2);
 			}
 			
 			&.bl, &.br {
-			.bottom(-5);
+			.bottom(-2);
 			}
 			
 			&.tl, &.bl {
-			.left(-5);	
+			.left(-1.5);	
 			}
 			
 			&.tr, &.br {
-			.right(-5);	
+			.right(-1.5);	
 			}
 			
 			&.tl {

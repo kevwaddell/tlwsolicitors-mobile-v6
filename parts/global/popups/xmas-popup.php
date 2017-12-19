@@ -11,12 +11,12 @@ $main_email = get_field('main_email', 'option');
 ?>		
 
 <?php if ($today < $turn_off_date) { ?>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+</style>
 <div id="xmas-popup-btn-wrap" class="pop-up-inactive">
-	<div  class="wrap-inner">
-		<div class="container-fluid">
-			<p><?php echo bloginfo('name'); ?> opening hours for the Christmas period <button id="xmas-popup-btn-open" class="btn btn-default">View times <i class="fa fa-arrow-circle-up"></i></button></p>
-		</div>
-	</div>
+	<p><?php echo bloginfo('name'); ?> opening hours<br> for the Christmas period</p>
+	<button id="xmas-popup-btn-open" class="btn btn-default">View times <i class="fa fa-arrow-circle-up"></i></button>
 	<div class="holly left"></div>
 	<div class="holly right"></div>
 </div>
@@ -25,7 +25,7 @@ $main_email = get_field('main_email', 'option');
 	<div class="xmas-popup-inner-wrap">
 		<div class="xmas-popup-inner hidden">
 			<h3 class="text-center">Christmas opening hours</h3>
-			<p class="text-center">Our opening hours for the Christmas period are as follows:</p>
+			<p class="text-center">Our opening hours for the<br> Christmas period are as follows:</p>
 			<?php echo $xmas_popup_times; ?>
 			<p class="text-center">If you have an urgent request please contact us on <a href="mailto:<?php echo $main_email; ?>"><?php echo $main_email; ?></a></p>
 			<button id="close-xmas-popup" class="btn btn-default btn-block btn-lg">Close <i class="fa fa-arrow-circle-down"></i></button>

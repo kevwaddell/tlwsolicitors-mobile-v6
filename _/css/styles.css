@@ -15186,34 +15186,43 @@ body.nav-open #footer-nav {
 /* Xmas styles */
 /* --------------------------- */
 #xmas-popup-btn-wrap {
-  position: relative;
+  position: absolute;
+  left: 0px;
   width: 100%;
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-#xmas-popup-btn-wrap .wrap-inner {
-  height: 70px;
-  border-bottom: 4px solid white;
+  padding: 10px 60px 10px 60px;
   background-color: #789b2c;
+  z-index: 10;
 }
 #xmas-popup-btn-wrap p {
-  line-height: 66px;
+  line-height: 16px;
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+@media only screen and (orientation: landscape) {
+  #xmas-popup-btn-wrap p br {
+    display: none;
+  }
 }
 #xmas-popup-btn-wrap.pop-up-inactive {
-  height: 70px;
+  bottom: 0px;
+  transform: translateY(-50px);
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
+@media only screen and (orientation: landscape) {
+  #xmas-popup-btn-wrap.pop-up-inactive {
+    display: none;
+  }
+}
 #xmas-popup-btn-wrap.pop-up-active {
-  height: 0px;
-  -webkit-animation-name: slideInDown;
-  animation-name: slideInDown;
+  transform: translateY(100%);
 }
 #xmas-popup-btn-wrap .btn {
   margin-left: 10px;
@@ -15234,9 +15243,11 @@ body.nav-open #footer-nav {
 #xmas-popup-btn-wrap .btn:active {
   background-color: #990000;
 }
-#xmas-popup-btn-wrap .holly {
+#xmas-popup-btn-wrap:before,
+#xmas-popup-btn-wrap:after {
+  content: "";
   position: absolute;
-  top: 3px;
+  bottom: 10px;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -15246,11 +15257,11 @@ body.nav-open #footer-nav {
   width: 60px;
   height: 60px;
 }
-#xmas-popup-btn-wrap .holly.left {
+#xmas-popup-btn-wrap:before {
   left: 10px;
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/holly-tr.png);
 }
-#xmas-popup-btn-wrap .holly.right {
+#xmas-popup-btn-wrap:after {
   right: 10px;
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/holly-tl.png);
 }
@@ -15267,7 +15278,6 @@ body.nav-open #footer-nav {
 }
 #xmas-popup-wrap .xmas-popup-inner-wrap {
   text-align: center;
-  padding: 20px;
   height: 100%;
   z-index: 2;
   position: relative;
@@ -15282,7 +15292,7 @@ body.nav-open #footer-nav {
 #xmas-popup-wrap .xmas-popup-inner {
   display: inline-block;
   vertical-align: middle;
-  width: 80%;
+  width: 90%;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -15297,28 +15307,31 @@ body.nav-open #footer-nav {
   -moz-background-size: 50%;
   -o-background-size: 50%;
   background-size: 50%;
-  padding: 20px 20px 220px 20px;
+  padding: 20px 20px 130px 20px;
   text-align: left;
   position: relative;
 }
 @media only screen and (orientation: landscape) {
   #xmas-popup-wrap .xmas-popup-inner {
-    -webkit-background-size: 40%;
-    -moz-background-size: 40%;
-    -o-background-size: 40%;
-    background-size: 40%;
-    padding-bottom: 240px;
+    background-image: none;
+    padding-bottom: 40px;
   }
 }
 #xmas-popup-wrap .xmas-popup-inner h3 {
   font-family: 'Lobster', cursive;
   color: #C60751;
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 #xmas-popup-wrap .xmas-popup-inner p {
   font-weight: bold;
+  font-size: 14px;
   margin-bottom: 10px;
+}
+@media only screen and (orientation: landscape) {
+  #xmas-popup-wrap .xmas-popup-inner p br {
+    display: none;
+  }
 }
 @media only screen and (orientation: landscape) {
   #xmas-popup-wrap .xmas-popup-inner ul {
@@ -15370,8 +15383,8 @@ body.nav-open #footer-nav {
 }
 #xmas-popup-wrap .xmas-popup-inner .holly {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -15381,19 +15394,19 @@ body.nav-open #footer-nav {
 }
 #xmas-popup-wrap .xmas-popup-inner .holly.tl,
 #xmas-popup-wrap .xmas-popup-inner .holly.tr {
-  top: -50px;
+  top: -20px;
 }
 #xmas-popup-wrap .xmas-popup-inner .holly.bl,
 #xmas-popup-wrap .xmas-popup-inner .holly.br {
-  bottom: -50px;
+  bottom: -20px;
 }
 #xmas-popup-wrap .xmas-popup-inner .holly.tl,
 #xmas-popup-wrap .xmas-popup-inner .holly.bl {
-  left: -50px;
+  left: -15px;
 }
 #xmas-popup-wrap .xmas-popup-inner .holly.tr,
 #xmas-popup-wrap .xmas-popup-inner .holly.br {
-  right: -50px;
+  right: -15px;
 }
 #xmas-popup-wrap .xmas-popup-inner .holly.tl {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/holly-tl.png);

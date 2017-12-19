@@ -6559,15 +6559,17 @@ body.nav-open #footer-nav { bottom: -50px; }
 /** --------------------------- /
 /* Xmas styles */
 /* --------------------------- */
-#xmas-popup-btn-wrap { position: relative; width: 100%; text-align: center; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+#xmas-popup-btn-wrap { position: absolute; left: 0px; width: 100%; text-align: center; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; padding: 10px 60px 10px 60px; background-color: #789b2c; z-index: 10; }
 
-#xmas-popup-btn-wrap .wrap-inner { height: 70px; border-bottom: 4px solid white; background-color: #789b2c; }
+#xmas-popup-btn-wrap p { line-height: 16px; color: white; font-weight: bold; font-size: 14px; margin-bottom: 5px; }
 
-#xmas-popup-btn-wrap p { line-height: 66px; color: white; font-weight: bold; font-size: 16px; }
+@media only screen and (orientation: landscape) { #xmas-popup-btn-wrap p br { display: none; } }
 
-#xmas-popup-btn-wrap.pop-up-inactive { height: 70px; -webkit-animation-name: slideInUp; animation-name: slideInUp; }
+#xmas-popup-btn-wrap.pop-up-inactive { bottom: 0px; transform: translateY(-50px); -webkit-animation-name: slideInUp; animation-name: slideInUp; }
 
-#xmas-popup-btn-wrap.pop-up-active { height: 0px; -webkit-animation-name: slideInDown; animation-name: slideInDown; }
+@media only screen and (orientation: landscape) { #xmas-popup-btn-wrap.pop-up-inactive { display: none; } }
+
+#xmas-popup-btn-wrap.pop-up-active { transform: translateY(100%); }
 
 #xmas-popup-btn-wrap .btn { margin-left: 10px; padding: 0px 15px 0px 20px; line-height: 30px; border: none; background-color: #cc0000; color: white; font-weight: bold; text-transform: uppercase; }
 
@@ -6575,25 +6577,27 @@ body.nav-open #footer-nav { bottom: -50px; }
 
 #xmas-popup-btn-wrap .btn:active { background-color: #990000; }
 
-#xmas-popup-btn-wrap .holly { position: absolute; top: 3px; background-position: center center; background-repeat: no-repeat; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; width: 60px; height: 60px; }
+#xmas-popup-btn-wrap:before, #xmas-popup-btn-wrap:after { content: ""; position: absolute; bottom: 10px; background-position: center center; background-repeat: no-repeat; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; width: 60px; height: 60px; }
 
-#xmas-popup-btn-wrap .holly.left { left: 10px; background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/holly-tr.png); }
+#xmas-popup-btn-wrap:before { left: 10px; background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/holly-tr.png); }
 
-#xmas-popup-btn-wrap .holly.right { right: 10px; background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/holly-tl.png); }
+#xmas-popup-btn-wrap:after { right: 10px; background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/holly-tl.png); }
 
 #xmas-popup-wrap { position: fixed; top: 0px; left: 0px; bottom: 0px; right: 0px; background-color: #7A1039; background-color: rgba(122, 16, 57, 0.8); z-index: 1000; display: none; }
 
-#xmas-popup-wrap .xmas-popup-inner-wrap { text-align: center; padding: 20px; height: 100%; z-index: 2; position: relative; }
+#xmas-popup-wrap .xmas-popup-inner-wrap { text-align: center; height: 100%; z-index: 2; position: relative; }
 
 #xmas-popup-wrap .xmas-popup-inner-wrap:before { content: ""; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em; }
 
-#xmas-popup-wrap .xmas-popup-inner { display: inline-block; vertical-align: middle; width: 80%; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); background-color: white; background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/xmas-logo.gif); background-repeat: no-repeat; background-position: center bottom; -webkit-background-size: 50%; -moz-background-size: 50%; -o-background-size: 50%; background-size: 50%; padding: 20px 20px 220px 20px; text-align: left; position: relative; }
+#xmas-popup-wrap .xmas-popup-inner { display: inline-block; vertical-align: middle; width: 90%; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); background-color: white; background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/xmas-logo.gif); background-repeat: no-repeat; background-position: center bottom; -webkit-background-size: 50%; -moz-background-size: 50%; -o-background-size: 50%; background-size: 50%; padding: 20px 20px 130px 20px; text-align: left; position: relative; }
 
-@media only screen and (orientation: landscape) { #xmas-popup-wrap .xmas-popup-inner { -webkit-background-size: 40%; -moz-background-size: 40%; -o-background-size: 40%; background-size: 40%; padding-bottom: 240px; } }
+@media only screen and (orientation: landscape) { #xmas-popup-wrap .xmas-popup-inner { background-image: none; padding-bottom: 40px; } }
 
-#xmas-popup-wrap .xmas-popup-inner h3 { font-family: 'Lobster', cursive; color: #C60751; font-size: 50px; margin-bottom: 20px; }
+#xmas-popup-wrap .xmas-popup-inner h3 { font-family: 'Lobster', cursive; color: #C60751; font-size: 30px; margin-bottom: 10px; }
 
-#xmas-popup-wrap .xmas-popup-inner p { font-weight: bold; margin-bottom: 10px; }
+#xmas-popup-wrap .xmas-popup-inner p { font-weight: bold; font-size: 14px; margin-bottom: 10px; }
+
+@media only screen and (orientation: landscape) { #xmas-popup-wrap .xmas-popup-inner p br { display: none; } }
 
 @media only screen and (orientation: landscape) { #xmas-popup-wrap .xmas-popup-inner ul { -moz-column-width: 50%; -moz-column-count: 2; -moz-column-gap: 50px; -moz-column-rule-color: white; -moz-column-rule-style: solid; -moz-column-rule-width: 0px; -webkit-column-width: 50%; -webkit-column-count: 2; -webkit-column-gap: 50px; -webkit-column-rule-color: white; -webkit-column-rule-style: solid; -webkit-column-rule-width: 0px; column-width: 50%; column-count: 2; column-gap: 50px; column-rule-color: white; column-rule-style: solid; column-rule-width: 0px; } }
 
@@ -6605,15 +6609,15 @@ body.nav-open #footer-nav { bottom: -50px; }
 
 #xmas-popup-wrap .xmas-popup-inner button#close-xmas-popup:active { background-color: #990000; }
 
-#xmas-popup-wrap .xmas-popup-inner .holly { position: absolute; width: 100px; height: 100px; background-position: center center; background-repeat: no-repeat; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
+#xmas-popup-wrap .xmas-popup-inner .holly { position: absolute; width: 50px; height: 50px; background-position: center center; background-repeat: no-repeat; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
 
-#xmas-popup-wrap .xmas-popup-inner .holly.tl, #xmas-popup-wrap .xmas-popup-inner .holly.tr { top: -50px; }
+#xmas-popup-wrap .xmas-popup-inner .holly.tl, #xmas-popup-wrap .xmas-popup-inner .holly.tr { top: -20px; }
 
-#xmas-popup-wrap .xmas-popup-inner .holly.bl, #xmas-popup-wrap .xmas-popup-inner .holly.br { bottom: -50px; }
+#xmas-popup-wrap .xmas-popup-inner .holly.bl, #xmas-popup-wrap .xmas-popup-inner .holly.br { bottom: -20px; }
 
-#xmas-popup-wrap .xmas-popup-inner .holly.tl, #xmas-popup-wrap .xmas-popup-inner .holly.bl { left: -50px; }
+#xmas-popup-wrap .xmas-popup-inner .holly.tl, #xmas-popup-wrap .xmas-popup-inner .holly.bl { left: -15px; }
 
-#xmas-popup-wrap .xmas-popup-inner .holly.tr, #xmas-popup-wrap .xmas-popup-inner .holly.br { right: -50px; }
+#xmas-popup-wrap .xmas-popup-inner .holly.tr, #xmas-popup-wrap .xmas-popup-inner .holly.br { right: -15px; }
 
 #xmas-popup-wrap .xmas-popup-inner .holly.tl { background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/holly-tl.png); }
 
