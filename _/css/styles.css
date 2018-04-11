@@ -16351,6 +16351,12 @@ figure.alignnone {
   margin: 0px;
   display: none;
 }
+#form-section .consent-message {
+  background-color: #E9E9E9;
+  padding: 15px 15px 5px 15px;
+  font-size: 16px;
+  line-height: 20px;
+}
 #form-section .gform_wrapper .gform_body:before,
 #form-section .gform_wrapper .gform_body:after {
   content: " ";
@@ -16669,6 +16675,12 @@ figure.alignnone {
 }
 #hp-form .gform_wrapper ul.gform_fields li .ginput_container {
   margin-top: 0px;
+}
+#hp-form .gform_wrapper ul.gform_fields li.consent_message {
+  background-color: #E9E9E9;
+  padding: 15px 15px 0px 15px;
+  font-size: 16px;
+  line-height: 20px;
 }
 #hp-form .gform_wrapper ul.gform_fields input[type="text"],
 #hp-form .gform_wrapper ul.gform_fields input[type="email"],
