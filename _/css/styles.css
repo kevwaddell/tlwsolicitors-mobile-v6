@@ -2,6 +2,7 @@
 /* --------------------------- */
 /* BOOTSTRAP */
 /* --------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
 body {
   margin: 0;
 }
@@ -13925,6 +13926,73 @@ article.tlw_landing_page #content-extra #content-extra-inner ul:last-child {
   background-color: #C60751;
   background-color: rgba(198, 7, 81, 0.8);
   color: white;
+}
+#awards-banner {
+  border-top: 3px solid white;
+  background-color: #036937;
+}
+#awards-banner #awards-banner-inner {
+  height: 140px;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/law-awards-left-bg.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-background-size: 20% 100%;
+  -moz-background-size: 20% 100%;
+  -o-background-size: 20% 100%;
+  background-size: 20% 100%;
+  position: relative;
+}
+#awards-banner #awards-banner-inner:after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/law-awards-left-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  backface-visibility: visible;
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+#awards-banner .inner-bg {
+  height: 140px;
+  width: 60%;
+  padding: 10px 0px 10px 0px;
+  margin: auto;
+  background-color: white;
+}
+#awards-banner .inner-bg .nla-logo {
+  height: 70px;
+  width: 100%;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/northern-law-awards-logo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  margin-bottom: 5px;
+}
+#awards-banner .inner-bg .year {
+  float: left;
+  color: #036937;
+  font-size: 30px;
+  font-family: 'Oswald', 'Impact', sans-serif;
+  line-height: 30px;
+  letter-spacing: -1px;
+  padding-right: 10px;
+}
+#awards-banner .inner-bg .description {
+  line-height: 20px;
+  font-size: 20px;
+  color: #036937;
+  font-family: 'Oswald', 'Impact', sans-serif;
 }
 section#slim-top-banner {
   border-top: 2px solid white;

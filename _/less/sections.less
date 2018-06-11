@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+
+#awards-banner {
+.border-top(@wht; 0.3);
+.bg-col(@awardsGreen);	
+	#awards-banner-inner {
+	.h(14);
+	.bg-img('law-awards-left-bg.png');
+	.bg-repeat(no-repeat);
+	background-position: left center;
+	.bg-size(20% 100%);	
+	.rel;
+		&:after {
+		content: "";
+		.abs;
+		width: 20%;
+		.right(0);
+		.top(0);	
+		.bottom(0);
+		.bg-img('law-awards-left-bg.png');
+		.bg-repeat(no-repeat);
+		background-position: right center;
+		.bg-size(100% 100%);	
+		backface-visibility: visible;
+		transform: rotate(180deg);
+		transform-origin: center;
+		}
+	}
+	
+	.inner-bg {	
+	.h(14);
+	width: 60%;
+	.pad(1;0;1;0);
+	margin: auto;
+	.bg-col(@wht);
+		.nla-logo {
+		.h(7);
+		width: 100%;
+		.bg-img('northern-law-awards-logo.png');
+		.bg-repeat(no-repeat);
+		background-position: left center;
+		.bg-size(contain);
+		.mag-bot(0.5);
+		}
+		
+		.year {
+		.fleft;
+		.col(@awardsGreen);	
+		.font-size(3);	
+		font-family: 'Oswald', 'Impact',  sans-serif;
+		.line-h(3);
+		letter-spacing: -1px;
+		.pad-right(1);
+		}
+		
+		.description {
+		.line-h(2);
+		.font-size(2);
+		.col(@awardsGreen);	
+		font-family: 'Oswald', 'Impact',  sans-serif;
+		}
+	}
+
+}
+
 //BANNER SECTION
 section#slim-top-banner {
 .border-top(@wht; 0.2);

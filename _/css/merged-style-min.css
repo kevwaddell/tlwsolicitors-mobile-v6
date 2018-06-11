@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:700");
 .tml { max-width: 320px; }
 
 .tml * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -6,19 +7,25 @@
 
 .tml .error { border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
 
+.tml .error a { color: #843534; }
+
 .tml .message { border: 1px solid #faebcc; background-color: #fcf8e3; color: #8a6d3b; }
 
+.tml .message a { color: #66512c; }
+
 .tml .success { border: 1px solid #d6e9c6; background-color: #dff0d8; color: #3c763d; }
+
+.tml .success a { color: #2b542c; }
 
 .tml p { margin: 0 0 1.5em 0; padding: 0; }
 
 .tml label { display: block; text-align: left; }
 
-.tml .tml-rememberme-wrap label { display: inline; }
+.tml .tml-rememberme-wrap label { display: inline; font-size: 90%; }
 
 .tml input, .tml textarea, .tml select { margin: 0.5em 0; width: 100%; }
 
-.tml input[type="checkbox"], .tml input[type="radio"], .tml .tml-rememberme-wrap input { vertical-align: middle; width: auto; }
+.tml input[type="checkbox"], .tml input[type="radio"], .tml .tml-rememberme-wrap input { margin: 0 0.5em 0 0; vertical-align: middle; width: auto; }
 
 .tml .tml-action-links { display: inline-block; list-style: none; margin: 0.5em auto; padding: 0; text-align: center; }
 
@@ -74,7 +81,6 @@
   .tml .tml-submit-wrap input { width: auto; }
   .tml-login .tml-rememberme-submit-wrap { display: table; margin-bottom: 1.5em; width: 100%; }
   .tml-login .tml-rememberme-wrap { display: table-cell; }
-  .tml-login .tml-rememberme-wrap input { margin: 0; }
   .tml-login .tml-submit-wrap { display: table-cell; text-align: right; }
   .tml-login .tml-submit-wrap input { margin: 0; width: auto; } }
 
@@ -6212,6 +6218,20 @@ article.page #content-extra #content-extra-inner p:last-child, article.post #con
 #toolkit-section a:active span.link-bg-img { top: -20px; left: -20px; right: -20px; bottom: -20px; -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px); }
 
 #toolkit-section a:active span.title { background-color: #C60751; background-color: rgba(198, 7, 81, 0.8); color: white; }
+
+#awards-banner { border-top: 3px solid white; background-color: #036937; }
+
+#awards-banner #awards-banner-inner { height: 140px; background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/law-awards-left-bg.png); background-repeat: no-repeat; background-position: left center; -webkit-background-size: 20% 100%; -moz-background-size: 20% 100%; -o-background-size: 20% 100%; background-size: 20% 100%; position: relative; }
+
+#awards-banner #awards-banner-inner:after { content: ""; position: absolute; width: 20%; right: 0px; top: 0px; bottom: 0px; background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/law-awards-left-bg.png); background-repeat: no-repeat; background-position: right center; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; backface-visibility: visible; transform: rotate(180deg); transform-origin: center; }
+
+#awards-banner .inner-bg { height: 140px; width: 60%; padding: 10px 0px 10px 0px; margin: auto; background-color: white; }
+
+#awards-banner .inner-bg .nla-logo { height: 70px; width: 100%; background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/northern-law-awards-logo.png); background-repeat: no-repeat; background-position: left center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; margin-bottom: 5px; }
+
+#awards-banner .inner-bg .year { float: left; color: #036937; font-size: 30px; font-family: 'Oswald', 'Impact', sans-serif; line-height: 30px; letter-spacing: -1px; padding-right: 10px; }
+
+#awards-banner .inner-bg .description { line-height: 20px; font-size: 20px; color: #036937; font-family: 'Oswald', 'Impact', sans-serif; }
 
 section#slim-top-banner { border-top: 2px solid white; position: relative; overflow: hidden; }
 
