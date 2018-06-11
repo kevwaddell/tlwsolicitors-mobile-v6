@@ -442,8 +442,12 @@ $('body').addClass('video-open');
 			initMap(lat, lng);		
 			});
 		}
+		
+		$('body').removeClass('atfc-mobile-css');
+		$('head').find("#critical-css").remove();
 			
-		setTimeout(function(){
+		/*
+setTimeout(function(){
         	
         	$('#loader').fadeOut('300', function(){	
         		$('body').removeClass('loading atfc-mobile-css');
@@ -451,6 +455,7 @@ $('body').addClass('video-open');
 			});
         	
 		}, 2000);
+*/
 
 		$('.has-bg-img').each(function(index, Element) {
 				var src = $(Element).data('src');

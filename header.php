@@ -1,6 +1,6 @@
 <?php
 get_template_part( 'parts/headers/header', 'global' );
-$body_classes = array('atfc-mobile-css','nav-closed', 'loading');
+$body_classes = array('atfc-mobile-css','nav-closed');
 $freephone_num = get_field('freephone_num', 'option');
 ?>	
 
