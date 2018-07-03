@@ -4,7 +4,6 @@
 <script type="text/javascript">
     var elm=document.getElementsByTagName("html")[0];
     elm.style.display="none";
-    document.addEventListener("DOMContentLoaded",function(event) { elm.style.display="block"; });
 </script>	
 	<?php if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') { ?>
 	<!-- Trinity Mirror script -->
@@ -57,10 +56,12 @@
 			var addStylesNode = document.getElementById("deferred-styles");
 			var gfStylesNode = document.getElementById("gf-deferred-styles");
 			var replacement = document.createElement("div");
+			var elm = document.getElementsByTagName("html")[0];
 			replacement.innerHTML = gfStylesNode.textContent + addStylesNode.textContent;
 			document.body.appendChild(replacement);
 			gfStylesNode.parentElement.removeChild(gfStylesNode);
 			addStylesNode.parentElement.removeChild(addStylesNode);
+			elm.style.display = "block";
 		};
 	 
 		var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;

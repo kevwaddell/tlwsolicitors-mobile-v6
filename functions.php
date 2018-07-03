@@ -26,4 +26,10 @@ if (!is_admin()) {
 	add_filter('gform_field_content', 'gform_no_cols', 10, 5); 
 	
 }
+
+function mob_my_login() {
+wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/_/css/user-styles.css' );  
+}
+
+add_action( 'login_enqueue_scripts', 'mob_my_login');
 ?>
