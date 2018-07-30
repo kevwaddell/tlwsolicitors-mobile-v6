@@ -1,12 +1,18 @@
 <?php 
 global $post;
-global $img_post;
-if (!isset($img_post)) {
-$img_post = get_the_ID();	
-}
 $page_icon = get_field('page_icon', $post->ID);	
 
-if (empty($page_icon)) {
+//echo '<pre>';print_r($img_post);echo '</pre>';
+
+if (is_post_type_archive( 'tlw_vacancies_cpt' )) {
+global  $img_post;
+$page_icon = get_field('page_icon', $img_post->ID);		
+} else {
+$img_post = $post;	
+}
+
+
+if (empty($page_icon) && !is_post_type_archive( 'tlw_vacancies_cpt' )) {
 $page_icon = get_field('page_icon', $post->post_parent);	
 }
 ?>
@@ -15,6 +21,6 @@ $page_icon = get_field('page_icon', $post->post_parent);
 		<i class="fa <?php echo $page_icon; ?>"></i>
 	</div>
 	<header class ="banner-title font-slab-serif caps">
-		<?php the_title(); ?>
+		<?php echo get_the_title($img_post); ?>
 	</header>
 </section>

@@ -4692,7 +4692,21 @@ section#contact-us-banner .contact-info a.contact-info-link:active { background-
 
 .pg-section h2.section-header { font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-stretch: normal; color: #C60751; font-size: 25px; line-height: 25px; margin-bottom: 10px; }
 
-.pg-section .lg-intro p.lead { font-size: 16px; line-height: 21px; }
+.pg-section .lg-intro p { font-size: 18px; line-height: 23px; }
+
+.pg-section .lg-intro hr { border: none; margin-top: 20px; margin-bottom: 20px; height: 1px; position: relative; }
+
+.pg-section .lg-intro hr.mag-top-30 { margin-top: 35px; }
+
+.pg-section .lg-intro hr:before, .pg-section .lg-intro hr:after { content: ""; position: absolute; height: 1px; width: 50%; }
+
+.pg-section .lg-intro hr:before { bottom: -1px; left: 0px; background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 50%); }
+
+.pg-section .lg-intro hr:after { right: 0px; bottom: -1px; background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 50%); }
+
+.pg-section .lg-intro img.alignleft { margin-right: 10px; margin-bottom: 10px; max-width: 40%; height: auto; float: left; }
+
+.pg-section .lg-intro img.alignright { margin-left: 10px; margin-bottom: 10px; max-width: 40%; height: auto; float: right; }
 
 .pg-section .well { background-color: #E9E9E9; border-color: #C60751; margin-bottom: 0px; }
 
