@@ -9943,11 +9943,19 @@ header[role="banner"].lp-header a.logo {
   text-overflow: ellipsis;
 }
 #breadcrumbs a {
+  display: inline-block;
   color: #4b4b4b;
   text-decoration: none;
+  max-width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #breadcrumbs a:active {
   color: #C60751;
+}
+#breadcrumbs span:last-child a {
+  max-width: none;
 }
 #continue-read-btn {
   -webkit-border-radius: 0px;

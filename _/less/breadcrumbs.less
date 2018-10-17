@@ -1,19 +1,29 @@
 #breadcrumbs {
-	.txt-col-grayDk;
-	.font-size(1.2);
-	.line-h(1.2);
-	.pad-top(2);
-	.pad-bot(2);
-		.breadcrumbs-inner {
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;	
-		}
+.txt-col-grayDk;
+.font-size(1.2);
+.line-h(1.2);
+.pad-top(2);
+.pad-bot(2);
+	.breadcrumbs-inner {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	}
 	a {
+	.in-block;
 	.txt-col-grayDk;
 	.no-text-dec;
+	.max-w(5);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;	
 		&:active {
 		.txt-col-red;
 		}	
+	}
+	span:last-child {
+		a {
+		max-width: none;	
+		}
 	}
 }
