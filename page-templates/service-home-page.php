@@ -43,7 +43,7 @@ Template Name: Service Home page
 				
 				<?php if ($section['acf_fc_layout'] == 'video-section') { ?>
 				<!-- VIDEOS SECTION -->
-					<?php get_template_part( 'parts/sections/section', 'videos' ); ?>		
+					<?php get_template_part( 'parts/sections/section', 'video' ); ?>		
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'form-section') { ?>
